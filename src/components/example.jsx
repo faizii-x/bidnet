@@ -66,7 +66,7 @@ export default function Example({ open, setOpen }) {
   const { pathname } = useLocation();
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Dialog as="div" className="relative z-50" onClose={setOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
@@ -124,7 +124,7 @@ export default function Example({ open, setOpen }) {
                       </button>
                     </div>
                   </Transition.Child>
-                  <div className="flex  h-full flex-col overflow-y-scroll bg-[#393A3B] z-999 py-6 shadow-xl">
+                  <div className="flex  h-full flex-col overflow-y-scroll bg-[#393A3B] z-50 py-6 shadow-xl">
                     <div className="container grid grid-cols-1 p-3">
                       <Link to="/">
                       <img src={Logo} />

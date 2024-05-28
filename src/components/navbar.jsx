@@ -21,7 +21,6 @@ function Navbar() {
   const [isHoverFive, setIsHoverFive] = useState(false);
   const [isHoverSix, setIsHoverSix] = useState(false);
   const [scrollValue, setScrollValue] = useState(0);
-  const [logoChange, setLogoChange] = useState(Logo)
   //   const [hide, setHide ] = useState(false)
 
   // const [isShow, setIsShow] = useState(false);
@@ -39,7 +38,7 @@ function Navbar() {
       // Get the scroll value from the window's scrollTop property
       const currentScrollValue =
         window.scrollY || document.documentElement.scrollTop;
-        // console.log(currentScrollValue)
+        //  console.log(currentScrollValue)
 
       // Update the state with the current scroll value
       setScrollValue(currentScrollValue);
@@ -52,8 +51,8 @@ function Navbar() {
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+};
+},[]);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -101,36 +100,10 @@ function Navbar() {
   //   setInput("")
   // }
 
-  //   useEffect(() => {
-  //     const unlisten = history.listen(() => {
-
-  //         setInput("");
-  //     });
-  //     return () => {
-  //         unlisten();
-  //     };
-  // }, [history]);
-
-  //   const filterLinks = () => {
-  //     if (input.trim() === "") {
-  //       return [];
-  //     }
-  //     const filterArray = FILTER_ARRAY.filter((x) =>
-  //       x.title.toLowerCase().includes(input.toLowerCase())
-  //     );
-  //     return filterArray.flatMap((x) => [...(x.subTrades || []), x]);
-  // };
-
-  // const filterLinks = () => {
-  //   const filterArray = FILTER_ARRAY.filter((x) =>
-  //     x.title.toLowerCase().includes(input.toLowerCase())
-  //   );
-  //   return filterArray.flatMap((x) => [...(x.subTrades || []), x]);
-  // };
 
   return (
     <>
-    <div className="fixed w-full mx-auto ">
+    <div className="fixed w-full mx-auto z-30">
       <div className= {` relative  p-1 z-20 ${scrollValue>10 ? "class-clr": "class-clr-2"}`} >
         <div className="flex justify-between gap-12 ml-4 mr-4">
           <Link to="/">
@@ -144,20 +117,20 @@ function Navbar() {
           <div className="class-hide-nav">
             <div className="flex justify-center gap-6 mt-6 ">
               <Link to="/">
-                <h2 className="text-[16px]  font-san font-normal hover:text-red">
+                <h2 className="text-[16px]  font-san font-normal">
                   {pathname === "/" ? (
-                    <div className=" text-red ">Home</div>
+                    <div className=" text-red-500 ">Home</div>
                   ) : (
                     "Home"
                   )}
                 </h2>
               </Link>
 
-              <Link to="/services">
+              <Link to="/service">
                 <div className="flex justify-start gap-1">
-                <h2 className="text-[16px]  font-san font-normal hover:text-red">
-                  {pathname === "/services" ? (
-                    <div className=" text-red">Services</div>
+                <h2 className="text-[16px]  font-san font-normal ">
+                  {pathname === "/service" ? (
+                    <div className=" text-red-500">Services</div>
                   ) : (
                     "Services"
                   )}
@@ -168,7 +141,7 @@ function Navbar() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-4 h-4 text-white mt-[5px]"
+                    className="w-4 h-4 mt-[5px]"
                   >
                     <path
                       strokeLinecap="round"
@@ -187,10 +160,10 @@ function Navbar() {
                 <div className="flex justify-start gap-1 cursor-pointer">
                   <Link
                     to="/our-trades/"
-                    className="fonty  font-san text-[16px] font-normal  hover:text-red cursor-pointer"
+                    className="fonty  font-san text-[16px] font-normal cursor-pointer"
                   >
                     {pathname === "/our-trades/" ? (
-                      <div className="text-red">Our Trade</div>
+                      <div className="text-">Our Trade</div>
                     ) : (
                       "Our Trade"
                     )}
@@ -202,7 +175,7 @@ function Navbar() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-4 h-4 text-white mt-[5px]"
+                    className="w-4 h-4  mt-[5px]"
                   >
                     <path
                       strokeLinecap="round"
@@ -566,9 +539,9 @@ function Navbar() {
               </div>
               <Link to="/about-us/">
                 <div className="flex justify-start gap-1">
-                  <h2 className="text-[16px]  font-san font-normal hover:text-red">
+                  <h2 className="text-[16px]  font-san font-normal ">
                     {pathname === "/about-us/" ? (
-                      <div className=" text-red">About Us</div>
+                      <div className=" text-">About Us</div>
                     ) : (
                       "About Us"
                     )}
@@ -577,7 +550,7 @@ function Navbar() {
               </Link>
 
               <Link to="/payment">
-                <h2 className="text-[16px]  font-san font-normal hover:text-red ">
+                <h2 className="text-[16px]  font-san font-normal  ">
                   {pathname === "/payment" ? (
                     <div className=" text-red"> Payment</div>
                   ) : (
@@ -587,7 +560,7 @@ function Navbar() {
               </Link>
 
               <Link to="/testimonials">
-                <h2 className="text-[16px] font-san font-normal hover:text-red">
+                <h2 className="text-[16px] font-san font-normal">
                   {pathname === "/testimonials" ? (
                     <div className=" text-red"> Testimonials</div>
                   ) : (
@@ -597,7 +570,7 @@ function Navbar() {
               </Link>
 
               <Link to="/estimating-fee/">
-                <h2 className="text-[16px]  font-san font-normal hover:text-red">
+                <h2 className="text-[16px]  font-san font-normal ">
                   {pathname === "/estimating-fee/" ? (
                     <div className=" text-red"> Estimating fee</div>
                   ) : (
@@ -607,7 +580,7 @@ function Navbar() {
               </Link>
 
               <Link to="/contact-us/">
-                <h2 className="text-[16px]  font-san font-normal hover:text-red">
+                <h2 className="text-[16px]  font-san font-normal">
                   {pathname === "/contact-us/" ? (
                     <div className=" text-red"> Contact Us</div>
                   ) : (
@@ -618,7 +591,7 @@ function Navbar() {
             </div>
           </div>
           <div className="hidden md:block self-center">
-            <div className=" border w-[140px] font-san h-[50px] self-center flex justify-center items-center cursor-pointer">
+            <div className=" border w-[140px] font-san hover:bg-[#004750] hover:text-white h-[50px] self-center flex justify-center items-center cursor-pointer">
               <button className="">Quick Estimate</button>
             </div>
           </div>
@@ -631,7 +604,7 @@ function Navbar() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-8 h-8 bg-red rounded-md text-white"
+              className="w-8 h-8 bg-red rounded-md text-[#004750]"
             >
               <path
                 strokeLinecap="round"

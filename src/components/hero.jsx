@@ -31,7 +31,7 @@ function Hero() {
             Schedule a Consultation with Our Expert Construction Estimators to
             Discuss Your Project Today!
           </p>
-          <div className="flex justify-center text-white font-san items-center p-2 border w-[230px] mx-auto">
+          <div className="flex justify-center hover:bg-white hover:text-[#004750] cursor-pointer text-white font-san items-center p-2 border w-[230px] mx-auto">
             <button>Book an Appointment</button>
           </div>
         </div>

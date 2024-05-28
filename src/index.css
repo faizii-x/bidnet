@@ -1,4 +1,6 @@
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -61,6 +63,184 @@ body::-webkit-scrollbar {
 
 }
 
+/* ...................................... */
+
+.clas-text{
+  opacity: 0;
+  bottom: 0;
+  transition: 0.5s linear;
+}
+.clas-text:hover {
+ 
+}
+.class-poori-div:hover .clas-text{
+  opacity: 1;
+  bottom: 2;
+  transition: 0.5s linear;
+}
+
+/* .................................. */
+
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+/* ....................................... */
+
+.class-div-hover{
+ 
+    background-image: url("/png/bgone.png");
+  
+}
+.class-div-hover:hover{
+  background-image: none;
+  background-color: #004750;
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+.bg-div{
+  background-image: url("/png/bgthree.png");
+
+}
+.bg-div:hover{
+  background-image: none;
+  background-color: #004750;
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+.bg-div-1{
+  background-image: url("/png/bgtwo.png");
+
+}
+.bg-div-1:hover{
+  background-image: none;
+  background-color: #004750;
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+.bg-div-2{
+  background-image: url("/png/bgfour.png");
+
+}
+.bg-div-2:hover{
+  background-image: none;
+  background-color: #004750;
+  transition: 0.5s linear;
+  opacity: 1;
+}
+
+/* .................................... */
+
+.small-pic-class{
+  position: absolute;
+  bottom: 170px;
+  right: 250px;
+  z-index: 10;
+  transition: 0.5s linear;
+
+}
+
+
+.small-pic-class-1{
+  position: absolute;
+  bottom: -40px;
+  right: 250px;
+  z-index: 10;
+  transition: 0.5s linear;
+
+}
+
+
+.second-small{
+  position: absolute;
+  top: 150px;
+  left: 260px;
+  z-index: 10;
+  transition: 0.5s linear;
+  
+
+}
+.second-small-1{
+  position: absolute;
+  top: -40px;
+  left: 260px;
+  z-index: 10;
+  transition: 0.5s linear;
+
+}
+/* ......................................... */
+
+/* Define the animation keyframes */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animations */
+.hovered .animate-text {
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+.hovered .animate-button {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+/* ................................ */
+
+
+
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+/* Apply the animations */
+.hovered .animate-text {
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+.hovered .animate-button-container {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+.animate-button {
+  animation: zoomOut 0.5s forwards;
+}
 /* ............................................... */
 
   @media (max-width: 1300px) {
@@ -71,9 +251,13 @@ body::-webkit-scrollbar {
 
   @media (max-width: 1080px) {
     .xxx{
-      background-color: #004750;
+      clip-path: none;
+    }
+    .padding-class{
+      padding-top: 20px;
     }
   }
+  
 
   @media (max-width: 768px) {
     .class-media-manage

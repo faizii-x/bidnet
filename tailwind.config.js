@@ -28,6 +28,6 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [[require("tw-elements-react/dist/plugin.cjs")]],
 }
 
