@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
 }
 .class-poori-div:hover .clas-text{
   opacity: 1;
-  bottom: 2;
+  bottom: 1;
   transition: 0.5s linear;
 }
 
@@ -100,7 +100,35 @@ body::-webkit-scrollbar {
   background: white;
 }
 /* ....................................... */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content img {
+  margin-right: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+/* ......................................... */
 .class-div-hover{
  
     background-image: url("/png/bgone.png");

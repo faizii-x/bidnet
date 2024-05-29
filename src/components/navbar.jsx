@@ -552,7 +552,7 @@ function Navbar() {
               <Link to="/payment">
                 <h2 className="text-[16px]  font-san font-normal  ">
                   {pathname === "/payment" ? (
-                    <div className=" text-red"> Payment</div>
+                    <div className=" text-red-400"> Payment</div>
                   ) : (
                     "Payment"
                   )}
@@ -582,7 +582,7 @@ function Navbar() {
               <Link to="/contact-us/">
                 <h2 className="text-[16px]  font-san font-normal">
                   {pathname === "/contact-us/" ? (
-                    <div className=" text-red"> Contact Us</div>
+                    <div className=" text-red-400"> Contact Us</div>
                   ) : (
                     " Contact Us"
                   )}
