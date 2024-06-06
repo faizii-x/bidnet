@@ -1,4 +1,5 @@
 import Banner from "../components/banner"
+import CopyHome from "../components/copyHome"
 import Faqs from "../components/faqs"
 import Gallery from "../components/gallery"
 import HalfText from "../components/halfText"
@@ -16,6 +17,7 @@ function Landing() {
     <Hero/>
     <HalfText/>
     <ServiceComp/>
+    <CopyHome/>
     <Project/>
     <Gallery/>
     <SecondText/>

@@ -1,79 +1,72 @@
-
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body::-webkit-scrollbar {
-    display: none;
-    font-family: "Inter", sans-serif;
-  }
-  
+  display: none;
+  font-family: "Inter", sans-serif;
+}
 
-  .class-general {
-    background-image: url("/png/takeoffbg.png");
-  }
+.class-general {
+  background-image: url("/png/takeoffbg.png");
+}
 
-  .class-hide-nav{
-    display: block;
-  }
+.class-hide-nav {
+  display: block;
+}
 
-  .underlinee {
-    display: inline-block;
-    position: relative;
+.underlinee {
+  display: inline-block;
+  position: relative;
 }
 
 .underlinee::after {
-    content: "";
-    display: block;
-    z-index: -9999;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    top: -5px;
-    left: 0;
+  content: "";
+  display: block;
+  z-index: -9999;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: -5px;
+  left: 0;
 }
 /* ...................40 off.................. */
-.class-clr{
+.class-clr {
   background-color: white;
   color: black;
   /* opacity: 1; */
   transition: 0.5s linear;
   padding-top: 0px;
   box-shadow: 2px 3px 1px rgb(82, 81, 81);
-
 }
-.class-clr-2{
+.class-clr-2 {
   /* opacity: 1; */
   transition: 0.5s linear;
   background-color: #138b9b05;
   color: white;
   padding-top: 10px;
-
 }
 
-.xxx{
+.xxx {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-
 }
 
 /* ...................................... */
 
-.clas-text{
+.clas-text {
   opacity: 0;
   bottom: 0;
   transition: 0.5s linear;
 }
 .clas-text:hover {
- 
 }
-.class-poori-div:hover .clas-text{
+.class-poori-div:hover .clas-text {
   opacity: 1;
   bottom: 1;
   transition: 0.5s linear;
@@ -127,92 +120,256 @@ body::-webkit-scrollbar {
 .paused {
   animation-play-state: paused !important;
 }
+/* ............................... */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromLeft 1s forwards;
+}
+/* .................................... */
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 1s forwards;
+}
+/* ................................... */
+@keyframes jumpUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-jump-up {
+  animation: jumpUp 0.5s ease-out forwards;
+}
+/* ......................................... */
+
+.background-image {
+  background-image: url('/png/trade1.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
 
 /* ......................................... */
-.class-div-hover{
- 
-    background-image: url("/png/bgone.png");
-  
+.class-div-hover {
+  background-image: url("/png/bgone.png");
 }
-.class-div-hover:hover{
+.class-div-hover:hover {
   background-image: none;
   background-color: #004750;
   transition: 0.5s linear;
   opacity: 1;
 }
 
-.bg-div{
+.bg-div {
   background-image: url("/png/bgthree.png");
-
 }
-.bg-div:hover{
+.bg-div:hover {
   background-image: none;
   background-color: #004750;
   transition: 0.5s linear;
   opacity: 1;
 }
 
-.bg-div-1{
+.bg-div-1 {
   background-image: url("/png/bgtwo.png");
-
 }
-.bg-div-1:hover{
+.bg-div-1:hover {
   background-image: none;
   background-color: #004750;
   transition: 0.5s linear;
   opacity: 1;
 }
 
-.bg-div-2{
+.bg-div-2 {
   background-image: url("/png/bgfour.png");
-
 }
-.bg-div-2:hover{
+.bg-div-2:hover {
   background-image: none;
   background-color: #004750;
   transition: 0.5s linear;
+  opacity: 1;
+}
+/* ............................. */
+
+.flip-card-general-1 {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner-general-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-general-1:hover .flip-card-inner-general-1 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-general-1,
+.flip-card-back-general-1 {
+  position: absolute;
+  width: 250px;
+  height: 190px;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-general-1 {
+  color: black;
+}
+
+.flip-card-back-general-1 {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out;
+}
+
+.animate-slideInItem {
+  animation: slideIn 0.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* ......................................... */
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.image-animatee {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-animatee.slide-in-left-animate {
+  animation: slideInLeft 1s forwards;
+  opacity: 1;
+}
+
+.image-animatee.slide-in-right-animate {
+  animation: slideInRight 1s forwards;
+  opacity: 1;
+}
+
+.image-animatee.slide-in-up-animate {
+  animation: slideInUp 1s forwards;
   opacity: 1;
 }
 
 /* .................................... */
 
-.small-pic-class{
+.small-pic-class {
   position: absolute;
   bottom: 170px;
   right: 250px;
   z-index: 10;
   transition: 0.5s linear;
-
 }
 
-
-.small-pic-class-1{
+.small-pic-class-1 {
   position: absolute;
   bottom: -40px;
   right: 250px;
   z-index: 10;
   transition: 0.5s linear;
-
 }
 
-
-.second-small{
+.second-small {
   position: absolute;
   top: 150px;
   left: 260px;
   z-index: 10;
   transition: 0.5s linear;
-  
-
 }
-.second-small-1{
+.second-small-1 {
   position: absolute;
   top: -40px;
   left: 260px;
   z-index: 10;
   transition: 0.5s linear;
-
 }
+
 /* ......................................... */
 
 /* Define the animation keyframes */
@@ -245,9 +402,6 @@ body::-webkit-scrollbar {
 
 /* ................................ */
 
-
-
-
 @keyframes zoomOut {
   0% {
     transform: scale(1);
@@ -269,32 +423,48 @@ body::-webkit-scrollbar {
 .animate-button {
   animation: zoomOut 0.5s forwards;
 }
+/* ....................................... */
+
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+.flip-animation {
+  animation: flip 1s ease-in-out;
+}
+
 /* ............................................... */
 
-  @media (max-width: 1300px) {
-    .class-hide-nav {
-      display: none;
-    }
+@media (max-width: 1300px) {
+  .class-hide-nav {
+    display: none;
   }
-
-  @media (max-width: 1080px) {
-    .xxx{
-      clip-path: none;
-    }
-    .padding-class{
-      padding-top: 20px;
-    }
+  .clas-height-set {
+    height: auto;
   }
-  
+}
 
-  @media (max-width: 768px) {
-    .class-media-manage
-    {
-      margin-top: -20px;
-    }
-    .class-media-manage-1
-    {
-      margin-top: -50px;
-    }
-
+@media (max-width: 1080px) {
+  .xxx {
+    clip-path: none;
   }
+  .padding-class {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .class-media-manage {
+    margin-top: -20px;
+  }
+  .class-media-manage-1 {
+    margin-top: -50px;
+  }
+}

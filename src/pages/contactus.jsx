@@ -27,21 +27,21 @@ function ContactUs() {
           <input
             type="text"
             placeholder="Muhammad Faizan"
-            className="lg:w-[70%] w-full mt-2 pl-3 outline-none border-b"
+            className="lg:w-[70%] w-full mt-2  outline-none border-b"
           />
 
           <p className="mt-3 text-[18px] font-san font-normal">Email</p>
           <input
             type="text"
             placeholder="faizanramzan670@gmail.com"
-            className="lg:w-[70%] w-full mt-2 pl-3 outline-none border-b"
+            className="lg:w-[70%] w-full mt-2  outline-none border-b"
           />
 
           <p className="mt-3 text-[18px] font-san font-normal">Phone Number</p>
           <input
             type="text"
             placeholder="03085170759"
-            className="lg:w-[70%] w-full mt-2 pl-3 outline-none border-b"
+            className="lg:w-[70%] w-full mt-2  outline-none border-b"
           />
 
           <p className="mt-3 text-[18px] font-san font-normal">Message</p>
@@ -50,7 +50,7 @@ function ContactUs() {
             rows={1}
             type="text"
             placeholder="Write your message..."
-            className="mb-5 lg:w-[70%] w-full mt-2 pl-3 outline-none border-b resize-none"
+            className="mb-5 lg:w-[70%] w-full mt-2 outline-none border-b resize-none"
           />
           <div className="flex justify-center gap-2 rounded-lg mb-5 items-center lg:w-[70%] w-full bg-customBlue-light p-3 text-white">
             <button>Send Message</button>

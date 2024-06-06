@@ -53,12 +53,12 @@ function SecondText() {
         <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto mb-8" >
           <div className="flex justify-start relative">
             <img src={Left} alt="" className=
-            {` h-[100px] md:block hidden ${scrollValue>2300 ? "small-pic-class-1": "small-pic-class"}`}
+            {` h-[100px] md:block hidden ${scrollValue>2550 ? "small-pic-class-1": "small-pic-class"}`}
              />
             <div className="">
             <img src={Big} alt="" className="z-20 relative border border-white" />
             </div>
-            <img src={Right} alt="" className={`md:block hidden ${scrollValue>2300 ? "second-small-1": "second-small"}`} />
+            <img src={Right} alt="" className={`md:block hidden ${scrollValue>2550 ? "second-small-1": "second-small"}`} />
           </div>
         </div>
       </div>

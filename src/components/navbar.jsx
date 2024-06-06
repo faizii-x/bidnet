@@ -103,13 +103,16 @@ function Navbar() {
 
   return (
     <>
-    <div className="fixed w-full mx-auto z-30">
-      <div className= {` relative  p-1 z-20 ${scrollValue>10 ? "class-clr": "class-clr-2"}`} >
+    <div className="fixed w-full mx-auto z-30 shadow-lg bg-white">
+      <div className= ""
+      // {` relative  p-1 z-20 ${scrollValue>10 ? "class-clr": "class-clr-2"}`} 
+      >
         <div className="flex justify-between gap-12 ml-4 mr-4">
           <Link to="/">
             <img
               className="cursor-pointer mx-auto w-[100%] h-[70px] "
-              src={scrollValue>10 ?  Logo2 : Logo}
+              src= {Logo2}
+              // {scrollValue>10 ?  Logo2 : Logo}
               alt=""
             />
           </Link>
@@ -119,7 +122,7 @@ function Navbar() {
               <Link to="/">
                 <h2 className="text-[16px]  font-san font-normal">
                   {pathname === "/" ? (
-                    <div className=" text-red-500 ">Home</div>
+                    <div className=" text-black ">Home</div>
                   ) : (
                     "Home"
                   )}
@@ -159,10 +162,10 @@ function Navbar() {
               >
                 <div className="flex justify-start gap-1 cursor-pointer">
                   <Link
-                    to="/our-trades/"
+                    to="/trade/"
                     className="fonty  font-san text-[16px] font-normal cursor-pointer"
                   >
-                    {pathname === "/our-trades/" ? (
+                    {pathname === "/trade/" ? (
                       <div className="text-">Our Trade</div>
                     ) : (
                       "Our Trade"
@@ -537,10 +540,10 @@ function Navbar() {
                   </div>
                 )}
               </div>
-              <Link to="/about-us/">
+              <Link to="/about/">
                 <div className="flex justify-start gap-1">
                   <h2 className="text-[16px]  font-san font-normal ">
-                    {pathname === "/about-us/" ? (
+                    {pathname === "/about/" ? (
                       <div className=" text-">About Us</div>
                     ) : (
                       "About Us"
@@ -559,19 +562,11 @@ function Navbar() {
                 </h2>
               </Link>
 
-              <Link to="/testimonials">
-                <h2 className="text-[16px] font-san font-normal">
-                  {pathname === "/testimonials" ? (
-                    <div className=" text-red"> Testimonials</div>
-                  ) : (
-                    "Testimonials"
-                  )}
-                </h2>
-              </Link>
+            
 
-              <Link to="/estimating-fee/">
+              <Link to="/estimating/">
                 <h2 className="text-[16px]  font-san font-normal ">
-                  {pathname === "/estimating-fee/" ? (
+                  {pathname === "/estimating/" ? (
                     <div className=" text-red"> Estimating fee</div>
                   ) : (
                     " Estimating fee"

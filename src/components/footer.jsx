@@ -14,22 +14,22 @@ function Footer() {
           Stay Updated with Our Latest Estimates!
         </p>
 
-        <div className="bg-white w-[40%] h-[38px] mx-auto mt-4 mb-2">
-          <div className="flex justify-between gap-2">
+        <div className="bg-white w-[40%] h-[38px] mx-auto mt-4 mb-8">
+          <div className="md:flex grid justify-between gap-2 ">
             <div className="flex justify-start gap-2 pl-2 pt-[5px]">
               <img src={Messagee} alt="" className="w-[24px] h-[24px]" />
               <input
                 type="text"
                 placeholder="Enter Your Email"
-                className="w-[60%] border-none outline-none -pt-3"
+                className="lg:w-[60%] w-full border-none outline-none -pt-3"
               />
             </div>
-            <div className="bg-customBlue-dark cursor-pointer rounded-md mt-1 text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
+            <div className="mx-auto  bg-customBlue-dark cursor-pointer rounded-md mt-1 text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
               <button className="font-san text-[14px]">SUBMIT</button>
             </div>
           </div>
         </div>
-        {/* <hr className="mt-7" /> */}
+        
       </div>
       {/* ................................ */}
 
@@ -58,14 +58,14 @@ function Footer() {
               >
                 Services
               </a>
-             
+
               <a
                 className="text-white text-[14px] font-san font-light "
                 href=""
               >
                 Payment
               </a>
-              
+
               <a
                 className="text-white text-[14px] font-san font-light "
                 href=""
@@ -112,16 +112,22 @@ function Footer() {
               COME FIND US
             </p>
             <div className="flex justify-start gap-2 mt-3">
-                <img src={Locate} alt="" className="w-[18px] h-[22px]"/>
-                <p className="text-white font-san text-[14px] font-light">111 Fulton St, New York, NY 10038, USA</p>
+              <img src={Locate} alt="" className="w-[18px] h-[22px]" />
+              <p className="text-white font-san text-[14px] font-light">
+                111 Fulton St, New York, NY 10038, USA
+              </p>
             </div>
             <div className="flex justify-start gap-2 mt-3">
-                <img src={Call} alt="" className="w-[22px] h-[20px]"/>
-                <p className="text-white font-san text-[14px] font-light underline">+1 917 300 1079</p>
+              <img src={Call} alt="" className="w-[22px] h-[20px]" />
+              <p className="text-white font-san text-[14px] font-light underline">
+                +1 917 300 1079
+              </p>
             </div>
             <div className="flex justify-start gap-2 mt-3">
-                <img src={Messeg} alt="" className="w-[22px] h-[16px] mt-1"/>
-                <p className="text-white font-san text-[14px] font-light underline">bidnetestimators@gmail.com</p>
+              <img src={Messeg} alt="" className="w-[22px] h-[16px] mt-1" />
+              <p className="text-white font-san text-[14px] font-light underline">
+                bidnetestimators@gmail.com
+              </p>
             </div>
           </div>
           <div className="col-span-1">
@@ -129,16 +135,30 @@ function Footer() {
               STAY CONNECTED
             </p>
             <div className="flex justify-start gap-3 mt-3">
-                <img src={Facebook} alt="" className="w-[24px] h-[24px] cursor-pointer"/>
-                <img src={Linkedin} alt="" className="w-[24px] h-[24px] cursor-pointer"/>
-                <img src={Insta} alt="" className="w-[24px] h-[24px] cursor-pointer"/>
+              <img
+                src={Facebook}
+                alt=""
+                className="w-[24px] h-[24px] cursor-pointer"
+              />
+              <img
+                src={Linkedin}
+                alt=""
+                className="w-[24px] h-[24px] cursor-pointer"
+              />
+              <img
+                src={Insta}
+                alt=""
+                className="w-[24px] h-[24px] cursor-pointer"
+              />
             </div>
           </div>
         </div>
-      
-      
-      <p className="text-white font-san text-center text-[13px] mt-4">Copyright © 2024 Bidnet Estimating Designed By <span className="text-[#0EC30E]">MF</span> <span className="text-[#FA8A42]">Bzone</span> </p>
-      
+
+        <p className="text-white font-san text-center text-[13px] mt-4">
+          Copyright © 2024 Bidnet Estimating Designed By{" "}
+          <span className="text-[#0EC30E]">MF</span>{" "}
+          <span className="text-[#FA8A42]">Bzone</span>{" "}
+        </p>
       </div>
     </>
   );

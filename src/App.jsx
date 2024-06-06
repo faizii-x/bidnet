@@ -6,6 +6,11 @@ import Footer from "./components/footer";
 import Service from "./pages/service";
 import ContactUs from "./pages/contactus";
 import Payment from "./pages/payment";
+import About from "./pages/about";
+import Estimating from "./pages/estimating";
+import Trade from "./pages/trade";
+import Cost from "./pages/cost";
+import Takeoff from "./pages/takeoff";
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/estimating" element={<Estimating />} />
+          <Route path="/trade" element={<Trade />} />
+          <Route path="/cost" element={<Cost />} />
+          <Route path="/takeoff" element={<Takeoff />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

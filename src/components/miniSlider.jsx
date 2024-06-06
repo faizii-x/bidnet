@@ -2,6 +2,9 @@ import Line from "../../public/png/line.png";
 import Mess from "../../public/png/mess.png";
 import Left1 from "../../public/png/left1.png";
 import Right1 from "../../public/png/right1.png";
+import Client1 from "../../public/png/client1.png";
+import Client2 from "../../public/png/client2.png";
+import Client3 from "../../public/png/client3.png";
 import Slider from "react-slick";
 
 function MiniSlider() {
@@ -87,6 +90,8 @@ function MiniSlider() {
             <img src={Right1} alt="" className="w-[14px] h-[20px]" />
           </div>
         </div>
+        <img src={Client1} alt="" className="w-[60px] h-[60px] mx-auto mt-5"/>
+        <p className="text-customBlue-light text-center mt-1 font-san font-semibold">John Elia</p>
         </div>
         {/* ............................................. */}
         <div className="p-3">
@@ -120,6 +125,8 @@ function MiniSlider() {
             <img src={Right1} alt="" className="w-[14px] h-[20px]" />
           </div>
         </div>
+        <img src={Client2} alt="" className="w-[60px] h-[60px] mx-auto mt-5"/>
+        <p className="text-customBlue-light text-center mt-1 font-san font-semibold">Sasha Grey</p>
         </div>
         {/* ....................................... */}
         <div className="p-3">
@@ -153,6 +160,8 @@ function MiniSlider() {
             <img src={Right1} alt="" className="w-[14px] h-[20px]" />
           </div>
         </div>
+        <img src={Client3} alt="" className="w-[60px] h-[60px] mx-auto mt-5"/>
+        <p className="text-customBlue-light text-center mt-1 font-san font-semibold">Eden Mark</p>
         </div>
         </Slider>
 </div>
