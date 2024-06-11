@@ -1,8 +1,18 @@
+import { useEffect } from "react";
 import Banner from "../components/banner";
 import SliderPay from "../components/sliderPay";
 import Steps from "../components/steps";
 
 function Payment() {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
+
   return (
     <>
       <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">

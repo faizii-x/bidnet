@@ -11,15 +11,19 @@ function AnimatedComp() {
   const data = {
     A: {
       image: ServiceOne,
+      para: "Starting a construction project? Our expert construction estimating team ensures accurate breakdowns of expenses from materials to labor, helping you stay on budget and make informed decisions.",
     },
     B: {
       image: ServiceTwo,
+      para: "Our Construction Takeoff Services offer detailed material breakdowns for better decisions. From foundation to finish, we handle Material Takeoff and Quantity Takeoff, ensuring smooth project execution and minimizing waste.",
     },
     C: {
       image: ServiceThree,
+      para: "Building a project on time and within budget requires a clear roadmap. Our team of scheduling experts creates detailed, realistic schedules for your construction project, keeping everything on track from start to finish.",
     },
     D: {
       image: ServiceFour,
+      para: "In project management, the first and most important step is planning. This means creating a detailed plan for the project's progress. Remember, planning is not the same as scheduling.",
     },
   };
 
@@ -52,11 +56,8 @@ function AnimatedComp() {
 
               <div className="class-poori-div relative lg:w-[90%] w-full">
                 <img src={currentData.image} alt="Current Data" className="" />
-                <p className="w-[89%] h-[110px] ml-[1px] rounded-md clas-text mx-auto text-center absolute bg-gray-500 text-white p-3 text-[16px]">
-                  Starting a construction project? Our expert construction cost
-                  estimating team ensures accurate breakdowns of expenses from
-                  materials to labor, helping you stay on budget and make
-                  informed decisions.
+                <p className="w-[89%] h-[110px] ml-[1px] rounded-md clas-text mx-auto text-center absolute bg-customBlue-light text-white p-3 text-[16px]">
+                  {currentData.para}
                 </p>
               </div>
             </div>

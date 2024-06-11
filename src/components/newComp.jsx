@@ -79,7 +79,7 @@ function NewComp() {
         LIST OF OUR <span className="text-customBlue-light">CLIENTS</span>
       </h2>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 w-[60%] mt-8 mx-auto">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 container w-[60%] mt-8 mx-auto">
         <div>
           <img src={Home} alt="" className="lg:h-[300px] h-auto"/>
         </div>

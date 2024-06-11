@@ -11,6 +11,12 @@ import Estimating from "./pages/estimating";
 import Trade from "./pages/trade";
 import Cost from "./pages/cost";
 import Takeoff from "./pages/takeoff";
+import Cpm from "./pages/cpm";
+import PageNotFound from "./pages/pageNotFound";
+import Quantity from "./pages/quantity";
+import Material from "./pages/material";
+import Plan from "./pages/plan";
+import General from "./pages/general";
 
 function App() {
   return (
@@ -27,6 +33,13 @@ function App() {
           <Route path="/trade" element={<Trade />} />
           <Route path="/cost" element={<Cost />} />
           <Route path="/takeoff" element={<Takeoff />} />
+          <Route path="/cpm" element={<Cpm />} />
+          <Route path="/quantity" element={<Quantity />} />
+          <Route path="/material" element={<Material />} />
+          <Route path="/plan" element={<Plan />} />
+          <Route path="/general" element={<General />} />
+          <Route path="/*" element={<PageNotFound />} />
+
         </Routes>
         <Footer/>
       </BrowserRouter>

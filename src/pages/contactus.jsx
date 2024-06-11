@@ -9,9 +9,16 @@ import Messe from "../../public/png/messe.png";
 import Instaa from "../../public/png/instaa.png";
 import Linkk from "../../public/png/linkk.png";
 import Facee from "../../public/png/facee.png";
-
+import { useEffect } from "react";
 
 function ContactUs() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
@@ -74,11 +81,11 @@ function ContactUs() {
           <img src={Cont} alt="" className=" lg:h-[400px] h-auto mx-auto" />
         </div>
       </div>
-{/* .................................... */}
+      {/* .................................... */}
       <Banner />
-{/* ................................. */}
+      {/* ................................. */}
 
-<div className="flex justify-center items-center gap-2 mt-6">
+      <div className="flex justify-center items-center gap-2 mt-6">
         <img src={Line} alt="" className="w-[50px] " />
         <img src={Loc} alt="" className="w-[25px] h-[25px]" />
         <img src={Line} alt="" className="w-[50px] " />
@@ -87,43 +94,52 @@ function ContactUs() {
         LOCATION
       </h2>
 
-
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 container mx-auto w-[80%] mt-6">
         <div className="col-span-1">
           <img src={Map} alt="" />
         </div>
         <div className="col-span-1">
+          <div className="flex justify-start gap-2">
+            <img src={Loca} alt="" className="w-[20px] h-[24px]" />
+            <p className="text-[#414141] text-[16px] font-san font-normal">
+              Location
+            </p>
+          </div>
 
-<div className="flex justify-start gap-2">
-  <img src={Loca} alt="" className="w-[20px] h-[24px]"/>
-  <p className="text-[#414141] text-[16px] font-san font-normal">Location</p>
-</div>
+          <div className="flex justify-start gap-2 mt-3">
+            <img src={Calli} alt="" className="w-[20px] h-[24px]" />
+            <a href="tel:+1 917 300 1079">
+            <p className="text-[#414141] text-[16px] font-san font-normal">
+              +1 917 300 1079
+            </p>
+            </a>
+          </div>
 
-<div className="flex justify-start gap-2 mt-3">
-  <img src={Calli} alt="" className="w-[20px] h-[24px]"/>
-  <p className="text-[#414141] text-[16px] font-san font-normal">+1 917 300 1079</p>
-</div>
+          <div className="flex justify-start gap-2 mt-3">
+            <img src={Messe} alt="" className="w-[24px] h-[24px]" />
+            <a href="mailto:bidnetestimators@gmail.com">
+            <p className="text-[#414141] text-[16px] font-san font-normal">
+              BiddingHelp@Bidnetestimating.com
+            </p>
+            </a>
+          </div>
 
+          <p className="text-[16px] font-san font-normal mt-6 text-[#414141]">
+            We have mentioned our phone number and mail address as well, on our
+            site . We are just one click away from you. Contact us for any
+            construction estimation service, construction takeoffs and other
+            such mentioned services at our website. Further, you can write to us
+            by uploading your plan or any estimation service you want. So, save
+            your precious money and catch us.
+          </p>
 
-<div className="flex justify-start gap-2 mt-3">
-  <img src={Messe} alt="" className="w-[24px] h-[24px]"/>
-  <p className="text-[#414141] text-[16px] font-san font-normal">BiddingHelp@Bidnetestimating.com</p>
-</div>
-
-<p className="text-[16px] font-san font-normal mt-6 text-[#414141]">We have mentioned our phone number and mail address as well, on our site . We are just one click away from you. Contact us for any construction estimation service, construction takeoffs and other such mentioned services at our website.
-Further, you can write to us by uploading your plan or any estimation service you want. So, save your precious money and catch us.</p>
-
-
-<div className="flex justify-start gap-5 mt-6">
-  <img src={Instaa} alt="" className="w-[28px] h-[28px]"/>
-  <img src={Linkk} alt="" className="w-[28px] h-[28px]"/>
-  <img src={Facee} alt="" className="w-[28px] h-[28px]"/>
-</div>
-
-
+          <div className="flex justify-start gap-5 mt-6">
+            <img src={Instaa} alt="" className="w-[28px] h-[28px]" />
+            <img src={Linkk} alt="" className="w-[28px] h-[28px]" />
+            <img src={Facee} alt="" className="w-[28px] h-[28px]" />
+          </div>
         </div>
       </div>
-
     </>
   );
 }

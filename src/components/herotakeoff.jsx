@@ -8,7 +8,7 @@ function Herotakeoff() {
     
     <div
         className="max-w-full h-auto bg-cover bg-center  pt-24"
-        style={{ backgroundImage: `url(${"/png/costbg.png"})` }}
+        style={{ backgroundImage: `url(${"/png/takeoffbg.png"})` }}
       >
         <div className="flex justify-center items-center gap-2 mt-5">
           <img src={Line} alt="" className="w-[50px] " />
@@ -25,13 +25,15 @@ function Herotakeoff() {
           Bidnet Estimating
         </span>{" "}
         , we prioritize offering dependable Construction Takeoff Services, covering Quantity Takeoff and Material Takeoff. Our goal is to ensure your project's success from the outset. With more than a decade of experience, we grasp the evolving market dynamics, enabling us to manage projects of any level of complexity. Reach out to us at{" "}
+        <a href="mailto:bidnetestimators@gmail.com">
         <span className="text-customBlue-light font-semibold">
           bidnetestimators@gmail.com
-        </span>{" "}
+        </span></a>{" "}
         or{" "}
+        <a href="tel:+1 917 300 1079">
         <span className="text-customBlue-light font-semibold">
           +1 917 300 1079
-        </span>
+        </span></a>
         .
       </p>
       <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para mt-6">

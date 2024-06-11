@@ -439,6 +439,67 @@ body::-webkit-scrollbar {
 .flip-animation {
   animation: flip 1s ease-in-out;
 }
+/* //////////////////////////// */
+
+.class-border{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.class-border-1{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.class-border-3{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.class-border-2{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* ........................... */
+
+.round-class{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+/* ................................ */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+}
+/* ..................................... */
+.hover\:zoom-in:hover {
+  transform: scale(1.1); /* Scale down to 90% */
+  transition: transform 0.3s ease-in-out;
+}
+
 
 /* ............................................... */
 
@@ -449,6 +510,16 @@ body::-webkit-scrollbar {
   .clas-height-set {
     height: auto;
   }
+  
+}
+@media (max-width: 1201px) {
+  .class-border{
+    display: none;
+  }
+  .class-border-2{
+    display: none;
+  }
+  
 }
 
 @media (max-width: 1080px) {
@@ -468,3 +539,5 @@ body::-webkit-scrollbar {
     margin-top: -50px;
   }
 }
+
+

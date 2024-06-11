@@ -18,7 +18,7 @@ function ServiceComp() {
       <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-2 container mx-auto mt-6">
         <div className="col-span-1">
           <div className="bg-white h-[500px] overflow-auto rounded-md border-2 border-customBlue-light p-3 custom-scrollbar">
-            <img src={Man} alt="" className="w-[170px] h-[140px] mx-auto" />
+            <img src={Man} alt="" className="w-[120px] h-[110px] mx-auto" />
             <p className="text-customBlue-light text-center font-san text-[20px] font-normal">
               As{" "}
               <span className="text-customBlue-light font-bold">VERIFIED</span>{" "}
@@ -32,7 +32,7 @@ function ServiceComp() {
               comprehensive planning, our team is dedicated to ensuring the
               success of your projects.
             </p>
-            <div className="bg-customBlue-dark p-3 w-[150px] text-white font-san mt-3 rounded-lg cursor-pointer hover:border-customBlue-dark border hover:bg-white hover:text-customBlue-dark flex justify-center items-center mx-auto">
+            <div className="bg-customBlue-dark p-3 w-[150px] text-white font-san mt-6 rounded-lg cursor-pointer hover:border-customBlue-dark border hover:bg-white hover:text-customBlue-dark flex justify-center items-center mx-auto">
               <button>Contact Us</button>
             </div>
           </div>

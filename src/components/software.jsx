@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Line from "../../public/png/line.png";
 import Soft from "../../public/png/soft.png";
 import Onelog from "../../public/png/onelog.png";
@@ -6,36 +6,45 @@ import Twolog from "../../public/png/twolog.png";
 import Threelog from "../../public/png/threelog.png";
 
 function Software() {
-    const [scrollValue, setScrollValue] = useState(0);
-    const imageRefs = useRef([]);
+    
 
-    const handleScroll = () => {
-        const currentScrollValue = window.scrollY || document.documentElement.scrollTop;
-        setScrollValue(currentScrollValue);
-    };
+    const imageRefs = useRef([]);
+    const sectionRef = useRef(null);
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    imageRefs.current.forEach((img) => {
+                        if (img) {
+                            if (img.classList.contains('slide-in-left')) {
+                                img.classList.add('slide-in-left-animate');
+                            } else if (img.classList.contains('slide-in-right')) {
+                                img.classList.add('slide-in-right-animate');
+                            } else if (img.classList.contains('slide-in-up')) {
+                                img.classList.add('slide-in-up-animate');
+                            }
+                        }
+                    });
+                    // Stop observing after animation triggers
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1, // Adjust this threshold as needed
+        });
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
         };
     }, []);
 
-    useEffect(() => {
-        if (scrollValue > 2400) {
-            imageRefs.current.forEach((img) => {
-                if (img) {
-                    if (img.classList.contains('slide-in-left')) {
-                        img.classList.add('slide-in-left-animate');
-                    } else if (img.classList.contains('slide-in-right')) {
-                        img.classList.add('slide-in-right-animate');
-                    } else if (img.classList.contains('slide-in-up')) {
-                        img.classList.add('slide-in-up-animate');
-                    }
-                }
-            });
-        }
-    }, [scrollValue]);
 
     return (
         <>
@@ -49,7 +58,7 @@ function Software() {
                 SOFTWARE'S <span className="text-customBlue-light font-medium"> WE USE</span>
             </h2>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-6">
+            <div ref={sectionRef} className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-6">
                 <img
                     src={Onelog}
                     alt=""

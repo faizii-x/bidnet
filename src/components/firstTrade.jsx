@@ -13,13 +13,15 @@ function FirstTrade() {
             for clients in the United States. Our dedicated team provides expert
             solutions for both individuals and businesses nationwide. Reach us
             at{" "}
+            <a href="mailto:bidnetestimators@gmail.com">
             <span className="text-customBlue-light font-medium hover:underline">
               bidnetestimators@gmail.com
-            </span>{" "}
+            </span></a>{" "}
             or{" "}
+            <a href="tel:+1 917 300 1079">
             <span className="text-customBlue-light font-medium hover:underline">
               +1 917 300 1079
-            </span>
+            </span></a>
             .
           </p>
         </div>

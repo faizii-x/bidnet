@@ -13,13 +13,13 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const handleOnClose = () => setOpen(false);
 
-  const [isHovered, setIsHovered] = useState(false);
-  const [oneIsHover, setOneIsHover] = useState(false);
-  const [isHoverTwo, setIsHoverTwo] = useState(false);
-  const [isHoverThree, setIsHoverThree] = useState(false);
-  const [isHoverFour, setIsHoverFour] = useState(false);
-  const [isHoverFive, setIsHoverFive] = useState(false);
-  const [isHoverSix, setIsHoverSix] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [oneIsHover, setOneIsHover] = useState(false);
+  // const [isHoverTwo, setIsHoverTwo] = useState(false);
+  // const [isHoverThree, setIsHoverThree] = useState(false);
+  // const [isHoverFour, setIsHoverFour] = useState(false);
+  // const [isHoverFive, setIsHoverFive] = useState(false);
+  // const [isHoverSix, setIsHoverSix] = useState(false);
   const [scrollValue, setScrollValue] = useState(0);
   //   const [hide, setHide ] = useState(false)
 
@@ -63,37 +63,37 @@ function Navbar() {
     setOneIsHover(true);
   };
 
-  const handleMouseEnterTwo = () => {
-    setIsHoverTwo(true);
-  };
-  const handleMouseLeaveTwo = () => {
-    setIsHoverTwo(false);
-  };
-  const handleMouseEnterThree = () => {
-    setIsHoverThree(true);
-  };
-  const handleMouseLeaveThree = () => {
-    setIsHoverThree(false);
-  };
+  // const handleMouseEnterTwo = () => {
+  //   setIsHoverTwo(true);
+  // };
+  // const handleMouseLeaveTwo = () => {
+  //   setIsHoverTwo(false);
+  // };
+  // const handleMouseEnterThree = () => {
+  //   setIsHoverThree(true);
+  // };
+  // const handleMouseLeaveThree = () => {
+  //   setIsHoverThree(false);
+  // };
 
-  const handleMouseEnterFour = () => {
-    setIsHoverFour(true);
-  };
-  const handleMouseLeaveFour = () => {
-    setIsHoverFour(false);
-  };
-  const handleMouseEnterFive = () => {
-    setIsHoverFive(true);
-  };
-  const handleMouseLeaveFive = () => {
-    setIsHoverFive(false);
-  };
-  const handleMouseEnterSix = () => {
-    setIsHoverSix(true);
-  };
-  const handleMouseLeaveSix = () => {
-    setIsHoverSix(false);
-  };
+  // const handleMouseEnterFour = () => {
+  //   setIsHoverFour(true);
+  // };
+  // const handleMouseLeaveFour = () => {
+  //   setIsHoverFour(false);
+  // };
+  // const handleMouseEnterFive = () => {
+  //   setIsHoverFive(true);
+  // };
+  // const handleMouseLeaveFive = () => {
+  //   setIsHoverFive(false);
+  // };
+  // const handleMouseEnterSix = () => {
+  //   setIsHoverSix(true);
+  // };
+  // const handleMouseLeaveSix = () => {
+  //   setIsHoverSix(false);
+  // };
 
   // const handleDelete = () => {
   //   setHide(true)
@@ -120,9 +120,9 @@ function Navbar() {
           <div className="class-hide-nav">
             <div className="flex justify-center gap-6 mt-6 ">
               <Link to="/">
-                <h2 className="text-[16px]  font-san font-normal">
+                <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light">
                   {pathname === "/" ? (
-                    <div className=" text-black ">Home</div>
+                    <div className=" text-customBlue-light ">Home</div>
                   ) : (
                     "Home"
                   )}
@@ -130,10 +130,10 @@ function Navbar() {
               </Link>
 
               <Link to="/service">
-                <div className="flex justify-start gap-1">
-                <h2 className="text-[16px]  font-san font-normal ">
+                <div className="flex justify-start ">
+                <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light">
                   {pathname === "/service" ? (
-                    <div className=" text-red-500">Services</div>
+                    <div className=" text-customBlue-light">Services</div>
                   ) : (
                     "Services"
                   )}
@@ -144,7 +144,7 @@ function Navbar() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-4 h-4 mt-[5px]"
+                    className="w-3 h-3 mt-[7px]"
                   >
                     <path
                       strokeLinecap="round"
@@ -160,13 +160,13 @@ function Navbar() {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="flex justify-start gap-1 cursor-pointer">
+                <div className="flex justify-start cursor-pointer">
                   <Link
                     to="/trade/"
-                    className="fonty  font-san text-[16px] font-normal cursor-pointer"
+                    className="fonty  font-san text-[15px] font-semibold cursor-pointer hover:text-customBlue-light"
                   >
                     {pathname === "/trade/" ? (
-                      <div className="text-">Our Trade</div>
+                      <div className="text-customBlue-light">Our Trade</div>
                     ) : (
                       "Our Trade"
                     )}
@@ -178,7 +178,7 @@ function Navbar() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-4 h-4  mt-[5px]"
+                    className="w-3 h-3 mt-[7px]"
                   >
                     <path
                       strokeLinecap="round"
@@ -188,7 +188,7 @@ function Navbar() {
                   </svg>
                 </div>
 
-                {isHovered && (
+                {/* {isHovered && (
                   <div className="absolute bg-customBlue-light rounded-md shadow-lg p-8 w-[840px] mt-1 z-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 divide-x ">
                       <div className="col-span-1 ">
@@ -538,13 +538,13 @@ function Navbar() {
                       </div>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
               <Link to="/about/">
                 <div className="flex justify-start gap-1">
-                  <h2 className="text-[16px]  font-san font-normal ">
+                  <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light">
                     {pathname === "/about/" ? (
-                      <div className=" text-">About Us</div>
+                      <div className="text-customBlue-light">About Us</div>
                     ) : (
                       "About Us"
                     )}
@@ -553,9 +553,9 @@ function Navbar() {
               </Link>
 
               <Link to="/payment">
-                <h2 className="text-[16px]  font-san font-normal  ">
+                <h2 className="text-[15px]  font-san font-semibold  hover:text-customBlue-light">
                   {pathname === "/payment" ? (
-                    <div className=" text-red-400"> Payment</div>
+                    <div className="text-customBlue-light"> Payment</div>
                   ) : (
                     "Payment"
                   )}
@@ -565,9 +565,9 @@ function Navbar() {
             
 
               <Link to="/estimating/">
-                <h2 className="text-[16px]  font-san font-normal ">
+                <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light ">
                   {pathname === "/estimating/" ? (
-                    <div className=" text-red"> Estimating fee</div>
+                    <div className="text-customBlue-light"> Estimating fee</div>
                   ) : (
                     " Estimating fee"
                   )}
@@ -575,9 +575,9 @@ function Navbar() {
               </Link>
 
               <Link to="/contact-us/">
-                <h2 className="text-[16px]  font-san font-normal">
+                <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light">
                   {pathname === "/contact-us/" ? (
-                    <div className=" text-red-400"> Contact Us</div>
+                    <div className="text-customBlue-light"> Contact Us</div>
                   ) : (
                     " Contact Us"
                   )}
@@ -586,7 +586,7 @@ function Navbar() {
             </div>
           </div>
           <div className="hidden md:block self-center">
-            <div className=" border w-[140px] font-san hover:bg-[#004750] hover:text-white h-[50px] self-center flex justify-center items-center cursor-pointer">
+            <div className=" border font-medium w-[140px] font-san hover:bg-customBlue-dark hover:text-white h-[50px] self-center flex justify-center items-center cursor-pointer hover:zoom-in">
               <button className="">Quick Estimate</button>
             </div>
           </div>

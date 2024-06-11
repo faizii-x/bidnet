@@ -2,7 +2,7 @@ function Hero() {
   return (
     <>
       <div
-        className=" max-w-full h-auto bg-cover bg-center z-10"
+        className=" max-w-full h-auto bg-cover bg-center  z-10"
         style={{ backgroundImage: `url(${"/png/heroimg.png"})` }}
       >
         <p className="md:pt-[30vh] pt-[17vh]  md:p-16 p-5 sm:text-[36px] text-[24px] font-san font-semibold text-white sm:leading-[54px] leading-0px]">

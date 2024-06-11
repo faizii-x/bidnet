@@ -1,8 +1,9 @@
 
-function HalfText({imageSrc, title, description, buttonText}) {
+function PropsTwo({imageSrc, title, description, buttonText}) {
   return (
     <>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-6">
+    
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-6">
         <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto">
           <img src={imageSrc} alt="" className="mx-auto"/>
         </div>
@@ -19,8 +20,9 @@ function HalfText({imageSrc, title, description, buttonText}) {
           </div>
         </div>
       </div>
+    
     </>
-  );
+  )
 }
 
-export default HalfText;
+export default PropsTwo

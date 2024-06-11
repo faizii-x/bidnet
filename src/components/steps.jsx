@@ -17,7 +17,7 @@ function Steps() {
         STEPS FOR <span className="text-customBlue-light">ESTIMATION</span>
       </h2>
 
-      <div className="w-[60%] container mx-auto mt-8">
+      <div className="lg:w-[60%] w-[80%] container mx-auto mt-8">
         <ol className="relative  border-s border-dashed border-customBlue-light ">
           <li className="mb-10 ms-6">
             <span className="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ">
