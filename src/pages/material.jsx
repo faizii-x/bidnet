@@ -3,8 +3,16 @@ import Cap from "../../public/png/costpic.png";
 import Banner from "../components/banner";
 import MaterialText from "../components/materialText";
 import Software from "../components/software";
+import { useEffect } from "react";
 
 function Material() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <div

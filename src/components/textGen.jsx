@@ -1,45 +1,10 @@
 import Line from "../../public/png/line.png";
-import Cap from "../../public/png/cap.png";
 import Home from "../../public/png/home.png";
 import Twoman from "../../public/png/twoman.png";
 
-function QuantityText() {
+function TextGen() {
   return (
     <>
-      <div className="flex justify-center items-center gap-2 mt-6">
-        <img src={Line} alt="" className="w-[50px] " />
-        <img src={Cap} alt="" className="w-[25px] h-[25px]" />
-        <img src={Line} alt="" className="w-[50px] " />
-      </div>
-
-      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para mt-4">
-        Why Choose Bidnet Estimating for{" "}
-        <span className="text-customBlue-light">
-          Quantity Takeoff Services?
-        </span>
-      </h3>
-
-      <p className="text-customBlue-para text-center font-san container mx-auto text-[20px] font-normal mt-2">
-        <span className="text-customBlue-light font-bold">
-          Bidnet Estimating
-        </span>{" "}
-        is a leading provider of Quantity Takeoff Services. For nearly 10 years,
-        we have delivered precise estimates and takeoff services, committed to
-        exceptional customer service. We offer quotes for your quantity takeoff
-        projects within 5 minutes and provide 24/7 email support. Our live chat
-        and call support team is always available. You can reach us through our
-        website or social media platforms like Facebook, Twitter, Instagram, and
-        LinkedIn. Trust{" "}
-        <span className="text-customBlue-light font-bold">
-          Bidnet Estimating
-        </span>{" "}
-        for quality services at great prices, with instant revisions included.
-        With 27 years of experience serving clients in real estate,
-        construction, and retail, Bidnet Estimating is dedicated to a
-        customer-focused approach.
-      </p>
-      {/* ............................... */}
-
       <div className="flex justify-center items-center gap-2 mt-6">
         <img src={Line} alt="" className="w-[50px] " />
         <img src={Twoman} alt="" className="w-[25px] h-[25px]" />
@@ -103,4 +68,4 @@ function QuantityText() {
   );
 }
 
-export default QuantityText;
+export default TextGen;

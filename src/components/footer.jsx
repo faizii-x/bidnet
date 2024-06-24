@@ -17,8 +17,8 @@ function Footer() {
       <p className="font-san text-center text-[18px] pt-2 font-semibold text-white">
           Stay Updated with Our Latest Estimates!
         </p>
-        <div className="bg-white w-[40%] h-[38px] mx-auto mt-4 mb-8">
-          <div className="md:flex grid justify-between gap-2 ">
+        <div className="bg-white lg:w-[40%] w-[80%] h-[38px]  mx-auto mt-4 mb-8">
+          <div className="sm:flex grid justify-between gap-2 ">
             <div className="flex justify-start gap-2 pl-2 pt-[5px]">
               <img src={Messagee} alt="" className="w-[24px] h-[24px]" />
               <input
@@ -27,7 +27,7 @@ function Footer() {
                 className="lg:w-[60%] w-full border-none outline-none -pt-3"
               />
             </div>
-            <div className="mx-auto  bg-customBlue-dark cursor-pointer rounded-md mt-1 text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
+            <div className="mx-auto bg-customBlue-dark cursor-pointer rounded-md mt-1 text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
               <button className="font-san text-[14px]">SUBMIT</button>
             </div>
           </div>

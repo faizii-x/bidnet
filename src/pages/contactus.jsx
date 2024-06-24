@@ -10,6 +10,8 @@ import Instaa from "../../public/png/instaa.png";
 import Linkk from "../../public/png/linkk.png";
 import Facee from "../../public/png/facee.png";
 import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function ContactUs() {
   useEffect(() => {
@@ -18,6 +20,10 @@ function ContactUs() {
       behavior: "smooth",
     });
   }, []);
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
 
   return (
     <>
@@ -59,7 +65,7 @@ function ContactUs() {
             placeholder="Write your message..."
             className="mb-5 lg:w-[70%] w-full mt-2 outline-none border-b resize-none"
           />
-          <div className="flex justify-center gap-2 rounded-lg mb-5 items-center lg:w-[70%] w-full bg-customBlue-light p-3 text-white">
+          <div className="flex justify-center hover:shadow-lg cursor-pointer gap-2 rounded-lg mb-5 items-center lg:w-[70%] w-full bg-customBlue-light p-3 text-white">
             <button>Send Message</button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,17 +73,17 @@ function ContactUs() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6"
+              className="h-5 w-5 "
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
               />
             </svg>
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto " data-aos="zoom-in">
           <img src={Cont} alt="" className=" lg:h-[400px] h-auto mx-auto" />
         </div>
       </div>
@@ -109,18 +115,18 @@ function ContactUs() {
           <div className="flex justify-start gap-2 mt-3">
             <img src={Calli} alt="" className="w-[20px] h-[24px]" />
             <a href="tel:+1 917 300 1079">
-            <p className="text-[#414141] text-[16px] font-san font-normal">
-              +1 917 300 1079
-            </p>
+              <p className="text-[#414141] text-[16px] font-san font-normal">
+                +1 917 300 1079
+              </p>
             </a>
           </div>
 
           <div className="flex justify-start gap-2 mt-3">
-            <img src={Messe} alt="" className="w-[24px] h-[24px]" />
+            <img src={Messe} alt="" className="w-[24px] h-[20px]" />
             <a href="mailto:bidnetestimators@gmail.com">
-            <p className="text-[#414141] text-[16px] font-san font-normal">
-              BiddingHelp@Bidnetestimating.com
-            </p>
+              <p className="text-[#414141] sm:text-[16px] text-[14px] font-san font-normal">
+                BiddingHelp@Bidnetestimating.com
+              </p>
             </a>
           </div>
 
@@ -134,9 +140,9 @@ function ContactUs() {
           </p>
 
           <div className="flex justify-start gap-5 mt-6">
-            <img src={Instaa} alt="" className="w-[28px] h-[28px]" />
-            <img src={Linkk} alt="" className="w-[28px] h-[28px]" />
-            <img src={Facee} alt="" className="w-[28px] h-[28px]" />
+            <img src={Instaa} alt="" className="w-[28px] h-[28px] cursor-pointer" />
+            <img src={Linkk} alt="" className="w-[28px] h-[28px] cursor-pointer" />
+            <img src={Facee} alt="" className="w-[28px] h-[28px] cursor-pointer" />
           </div>
         </div>
       </div>

@@ -3,8 +3,18 @@ import Cap from "../../public/png/costpic.png";
 import Banner from "../components/banner"
 import Software from "../components/software"
 import QuantityText from "../components/quantityText";
+import { useEffect } from "react";
+
 
 function Quantity() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
+
   return (
     <>
     

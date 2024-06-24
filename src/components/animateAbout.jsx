@@ -1,45 +1,54 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import Business from "../../public/png/business.gif";
 import Mission from "../../public/png/mission.gif";
 import Solution from "../../public/png/solution.gif";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function AnimateAbout() {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef();
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
-          }
-        });
-      },
-      { threshold: 0.1 } // Adjust the threshold as needed
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
+    Aos.init();
   }, []);
+
+
+  // const [isVisible, setIsVisible] = useState(false);
+  // const ref = useRef();
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setIsVisible(true);
+  //           observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.1 } // Adjust the threshold as needed
+  //   );
+
+  //   if (ref.current) {
+  //     observer.observe(ref.current);
+  //   }
+
+  //   return () => {
+  //     if (ref.current) {
+  //       observer.unobserve(ref.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <>
       <div
-        ref={ref}
-        className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
-          isVisible ? "animate-slide-in" : ""
-        }`}
+        // ref={ref}
+        // className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
+        //   isVisible ? "animate-slide-in" : ""
+        // }`}
+        className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto mt-8" data-aos="fade-right"
       >
-        <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto">
+        <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto" >
           <img
             src={Mission}
             alt="Residential Project"
@@ -63,12 +72,13 @@ function AnimateAbout() {
       {/* // ................................................ */}
 
       <div
-        ref={ref}
-        className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  container mx-auto mt-8 ${
-          isVisible ? "animate-slide-in-right" : ""
-        }`}
+        // ref={ref}
+        // className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  container mx-auto mt-8 ${
+        //   isVisible ? "animate-slide-in-right" : ""
+        // }`} 
+        className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  container mx-auto mt-8" data-aos="fade-left"
       >
-        <div className="col-span-3 self-center mx-auto">
+        <div className="col-span-3 self-center mx-auto" >
           <h4 className="text-[20px] font-sans font-semibold">Our Vision</h4>
           <p className="text-[18px] font-sans font-normal mt-1">
             For commercial projects,{" "}
@@ -88,12 +98,13 @@ function AnimateAbout() {
       </div>
       {/* ................................................ */}
       <div
-        ref={ref}
-        className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
-          isVisible ? "animate-slide-in" : ""
-        }`}
+        // ref={ref}
+        // className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
+        //   isVisible ? "animate-slide-in" : ""
+        // }`}
+        className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto mt-8" data-aos="fade-right"
       >
-        <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto">
+        <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto" >
           <img src={Business} alt="Residential Project" className="mb-2 w-[124px] h-[124px]" />
         </div>
 

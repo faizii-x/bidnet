@@ -4,14 +4,12 @@ import SliderPay from "../components/sliderPay";
 import Steps from "../components/steps";
 
 function Payment() {
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
-
 
   return (
     <>
@@ -31,9 +29,7 @@ function Payment() {
           </p>
         </div>
         <div className="col-span-1">
-<SliderPay/>
-
-
+          <SliderPay />
         </div>
       </div>
       <Banner />

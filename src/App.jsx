@@ -17,6 +17,11 @@ import Quantity from "./pages/quantity";
 import Material from "./pages/material";
 import Plan from "./pages/plan";
 import General from "./pages/general";
+import Sitework from "./pages/sitework";
+import Concrete from "./pages/concrete";
+import Metal from "./pages/metal";
+import Drywall from "./pages/drywall";
+import Hvac from "./pages/hvac";
 
 function App() {
   return (
@@ -38,6 +43,11 @@ function App() {
           <Route path="/material" element={<Material />} />
           <Route path="/plan" element={<Plan />} />
           <Route path="/general" element={<General />} />
+          <Route path="/sitework" element={<Sitework />} />
+          <Route path="/concrete" element={<Concrete />} />
+          <Route path="/metal" element={<Metal />} />
+          <Route path="/drywall" element={<Drywall />} />
+          <Route path="/hvac" element={<Hvac />} />
           <Route path="/*" element={<PageNotFound />} />
 
         </Routes>
