@@ -20,7 +20,7 @@ function Footer() {
         <div className="bg-white lg:w-[40%] w-[80%] h-[38px]  mx-auto mt-4 mb-8">
           <div className="sm:flex grid justify-between gap-2 ">
             <div className="flex justify-start gap-2 pl-2 pt-[5px]">
-              <img src={Messagee} alt="" className="w-[24px] h-[24px]" />
+              <img src={Messagee} alt="" className="w-[28px] h-[24px]" />
               <input
                 type="text"
                 placeholder="Enter Your Email"

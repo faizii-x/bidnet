@@ -17,8 +17,8 @@ function Payment() {
         PAYMENT
       </h2>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 container mx-auto">
-        <div className="col-span-1">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto">
+        <div className="col-span-2">
           <h3 className="text-[18px] font-san font-semibold  text-customBlue-para mt-6">
             Refund Policy:
           </h3>
@@ -28,7 +28,7 @@ function Payment() {
             exchanges to ensure you receive the best value for your investment.
           </p>
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto">
           <SliderPay />
         </div>
       </div>

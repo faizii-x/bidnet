@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CARDS_TRADE1, CARDS_TRADES } from "../../data";
 import Line from "../../public/png/line.png";
 import Cap from "../../public/png/tradee.png";
@@ -23,12 +24,14 @@ function TradeMap() {
             className="max-w-full bg-cover bg-center rounded-2xl p-2 h-[160px]"
             style={{ backgroundImage: `url(${image.url})` }}
           >
+            <Link to={image.link}>{image.name}
             <p className="text-[#33CCCC] text-center text-[18px] mt-3 font-semibold">
               {image.text}
             </p>
             <p className="text-white text-center text-[15px] mt-2 mb-2 p-1 font-normal">
               {image.para}
             </p>
+            </Link>
           </div>
         ))}
       </div>

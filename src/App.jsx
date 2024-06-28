@@ -22,6 +22,14 @@ import Concrete from "./pages/concrete";
 import Metal from "./pages/metal";
 import Drywall from "./pages/drywall";
 import Hvac from "./pages/hvac";
+import Mep from "./pages/mep";
+import Mechanical from "./pages/mechanical";
+import Electrical from "./pages/electrical";
+import Plumbing from "./pages/plumbing";
+import Commercial from "./pages/commercial";
+import Industrial from "./pages/industrial";
+import Residential from "./pages/residential";
+import Lumber from "./pages/lumber";
 
 function App() {
   return (
@@ -48,6 +56,14 @@ function App() {
           <Route path="/metal" element={<Metal />} />
           <Route path="/drywall" element={<Drywall />} />
           <Route path="/hvac" element={<Hvac />} />
+          <Route path="/mep" element={<Mep />} />
+          <Route path="/mechanical" element={<Mechanical />} />
+          <Route path="/electrical" element={<Electrical />} />
+          <Route path="/plumbing" element={<Plumbing />} />
+          <Route path="/commercial" element={<Commercial />} />
+          <Route path="/industrial" element={<Industrial />} />
+          <Route path="/residential" element={<Residential />} />
+          <Route path="/lumber" element={<Lumber />} />
           <Route path="/*" element={<PageNotFound />} />
 
         </Routes>

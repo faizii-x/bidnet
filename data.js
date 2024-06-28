@@ -4,30 +4,40 @@ export const CARDS_TRADES = [
     url: "/png/trade1.png",
     text: "GENERAL REQUIREMENTS",
     para: "Thorough project analysis and accurate estimates for informed decisions.",
+    link: "/general",
+
   },
   {
     id: 2,
     url: "/png/trade2.png",
     text: "SITEWORK",
     para: "SiteWorks: Efficient management and execution of on-site tasks.",
+    link: "/sitework",
+
   },
   {
     id: 3,
     url: "/png/trade3.png",
     text: "CONCRETE",
     para: "Concrete: Solid foundations built to last.",
+    link: "/concrete",
+
   },
-  {
-    id: 4,
-    url: "/png/trade4.png",
-    text: "MASONRY",
-    para: "Masonry: Reliable solutions for durable and aesthetic structures.",
-  },
+  // {
+  //   id: 4,
+  //   url: "/png/trade4.png",
+  //   text: "MASONRY",
+  //   para: "Masonry: Reliable solutions for durable and aesthetic structures.",
+  //   link: "/concrete",
+
+  // },
   {
     id: 5,
     url: "/png/trade5.png",
     text: "METALS",
     para: "Metals: Strength and durability in every structure.",
+    link: "/metals",
+
   },
   {
     id: 6,

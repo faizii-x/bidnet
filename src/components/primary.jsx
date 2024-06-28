@@ -2,6 +2,7 @@ import Line from "../../public/png/line.png";
 import Cap from "../../public/png/cap.png";
 import Facee from "../../public/png/truck.gif";
 import Face from "../../public/png/truck1.gif";
+import { Link } from "react-router-dom"
 
 function Primary() {
   return (
@@ -26,9 +27,11 @@ function Primary() {
             Explore the basics of Quantity Takeoff services, vital for project
             estimation. Understand its importance and methods in an easy format.
           </p>
+          <Link to="/quantity">
           <div className="border border-customBlue-light p-2 mt-2 text-customBlue-light cursor-pointer hover:bg-customBlue-light hover:text-white w-[140px] rounded-full flex justify-center items-center mx-auto">
             <button>Read More</button>
           </div>
+          </Link>
         </div>
         <div className="bg-white p-2 rounded-lg shadow-md">
           <img src={Facee} alt="" className="mx-auto w-[80px] h-[80px]" />
@@ -39,9 +42,11 @@ function Primary() {
             Explore the basics of Quantity Takeoff services, vital for project
             estimation. Understand its importance and methods in an easy format.
           </p>
+          <Link to="/material">
           <div className="border border-customBlue-light p-2 mt-2 text-customBlue-light cursor-pointer hover:bg-customBlue-light hover:text-white w-[140px] rounded-full flex justify-center items-center mx-auto">
             <button>Read More</button>
           </div>
+          </Link>
         </div>
       </div>
     </>

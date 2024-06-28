@@ -1,43 +1,52 @@
-import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef, useState } from "react";
 import Resi from "../../public/png/resi1.png";
 import Comm1 from "../../public/png/comm1.png";
 import Ind1 from "../../public/png/ind1.png";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function ThirdComp() {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef();
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
-          }
-        });
-      },
-      { threshold: 0.1 } // Adjust the threshold as needed
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
+    Aos.init();
   }, []);
+
+  // const [isVisible, setIsVisible] = useState(false);
+  // const ref = useRef();
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setIsVisible(true);
+  //           observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.1 } // Adjust the threshold as needed
+  //   );
+
+  //   if (ref.current) {
+  //     observer.observe(ref.current);
+  //   }
+
+  //   return () => {
+  //     if (ref.current) {
+  //       observer.unobserve(ref.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <>
       <div
-        ref={ref}
-        className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
-          isVisible ? "animate-slide-in" : ""
-        }`}
+        // ref={ref}
+        // className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
+        //   isVisible ? "animate-slide-in" : ""
+        // }`}
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8" data-aos="fade-right"
       >
         <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto">
           <img src={Resi} alt="Residential Project" className="mb-2" />
@@ -57,8 +66,9 @@ function ThirdComp() {
       {/* // ................................................ */}
 
       <div
-      ref={ref}
-      className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  container mx-auto mt-8 ${isVisible ? "animate-slide-in-right" : ""}`}
+      // ref={ref}
+      // className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  container mx-auto mt-8 ${isVisible ? "animate-slide-in-right" : ""}`}
+    className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8" data-aos="fade-left"
     >
         <div className="col-span-2 self-center mx-auto">
           <h4 className="text-[20px] font-sans font-semibold">COMMERCIAL</h4>
@@ -77,10 +87,11 @@ function ThirdComp() {
       </div>
       {/* ................................................ */}
       <div
-        ref={ref}
-        className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
-          isVisible ? "animate-slide-in" : ""
-        }`}
+        // ref={ref}
+        // className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8 ${
+        //   isVisible ? "animate-slide-in" : ""
+        // }`}
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-8" data-aos="fade-right"
       >
         <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto">
           <img src={Ind1} alt="Residential Project" className="mb-2" />

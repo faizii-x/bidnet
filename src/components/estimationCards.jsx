@@ -1,40 +1,52 @@
 
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 function EstimationCards() {
-    const [isVisible, setIsVisible] = useState(false);
-    const ref = useRef();
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
+
+    // const [isVisible, setIsVisible] = useState(false);
+    // const ref = useRef();
   
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setIsVisible(true);
-              observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
-            }
-          });
-        },
-        { threshold: 0.1 } // Adjust the threshold as needed
-      );
+    // useEffect(() => {
+    //   const observer = new IntersectionObserver(
+    //     (entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           setIsVisible(true);
+    //           observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
+    //         }
+    //       });
+    //     },
+    //     { threshold: 0.1 } // Adjust the threshold as needed
+    //   );
   
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
+    //   if (ref.current) {
+    //     observer.observe(ref.current);
+    //   }
   
-      return () => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
-      };
-    }, []);
+    //   return () => {
+    //     if (ref.current) {
+    //       observer.unobserve(ref.current);
+    //     }
+    //   };
+    // }, []);
   
 
   return (
     <>
-      <div ref={ref} className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-8">
-        <div className={`bg-white rounded-3xl shadow-lg p-6 h-[500px] clas-height-set mt-6 ${isVisible ? "animate-jump-up" : ""}`}>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-8">
+        <div
+        //  className={`bg-white rounded-3xl shadow-lg p-6 h-[500px] clas-height-set mt-6 ${isVisible ? "animate-jump-up" : ""}`}
+        className="bg-white hover:bg-blue-50 rounded-3xl shadow-lg p-6 h-[500px] clas-height-set mt-6" data-aos="zoom-in"
+        >
           <h5 className="text-[18px] font-semibold text-[#414141] text-center font-san">
             SINGLE TRADE PRICING
           </h5>
@@ -77,12 +89,16 @@ function EstimationCards() {
           <p className="text-[18px] font-semibold text-[#414141] font-san mt-[5px]">
             150$ <span className="text-[16px] font-normal">Specific Trade</span>
           </p>
-          <div className="cursor-pointer bg-customBlue-light p-3 mt-4 rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
+          <div className="cursor-pointer bg-customBlue-light hover:bg-white hover:border-black border hover:text-black p-3 mt-4 rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
             <button>Get Started</button>
           </div>
         </div>
 
-        <div className={`bg-customBlue-light rounded-3xl shadow-lg p-6 clas-height-set h-[550px] ${isVisible ? "animate-jump-up" : ""}`}>
+        <div
+        //  className={`bg-customBlue-light rounded-3xl shadow-lg p-6 clas-height-set h-[550px] ${isVisible ? "animate-jump-up" : ""}`}
+         className="bg-customBlue-light hover:bg-[#2b94a1] 00 rounded-3xl shadow-lg p-6 clas-height-set h-[550px]" data-aos="zoom-in"
+         >
+        
           <h5 className="text-[18px] font-semibold text-white text-center font-san">
             MONTHLY PACKAGES
           </h5>
@@ -133,12 +149,15 @@ function EstimationCards() {
           <p className="text-[18px] font-semibold text-white font-san mt-[5px]">
             1500$ <span className="text-[16px] font-normal">Per Month</span>
           </p>
-          <div className="cursor-pointer bg-white p-3 mt-4 rounded-lg text-customBlue-light text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
+          <div className="cursor-pointer bg-white hover:text-black hover:bg-white hover:border-black border p-3 mt-4 rounded-lg text-customBlue-light text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
             <button>Get Started</button>
           </div>
         </div>
 
-        <div className={`bg-white rounded-3xl shadow-lg p-6 clas-height-set h-[500px] mt-6 ${isVisible ? "animate-jump-up" : ""}`}>
+        <div
+        //  className={`bg-white rounded-3xl shadow-lg p-6 clas-height-set h-[500px] mt-6 ${isVisible ? "animate-jump-up" : ""}`}
+         className="bg-white hover:bg-blue-50 rounded-3xl shadow-lg p-6 clas-height-set h-[500px] mt-6" data-aos="zoom-in"
+         >
           <h5 className="text-[18px] font-semibold text-[#414141] text-center font-san">
             ENTERPRISE
           </h5>
@@ -174,7 +193,7 @@ function EstimationCards() {
           <p className="text-[18px] font-semibold text-[#414141] font-san mt-[5px]">
             CALL FOR PRICE
           </p>
-          <div className="cursor-pointer bg-customBlue-light p-3 mt-[67px] rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
+          <div className="cursor-pointer bg-customBlue-light hover:bg-white hover:border-black border hover:text-black p-3 mt-[67px] rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
             <button>Call Now</button>
           </div>
         </div>

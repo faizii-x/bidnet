@@ -20,7 +20,7 @@ function CopyHome() {
         <h2 className="text-[24px] font-san font-semibold text-center container mx-auto text-customBlue-para">
         WHY{" "}
         <span className="text-customBlue-light font-semibold">
-          BIDNET ESTIMATIBG
+          BIDNET ESTIMATING
         </span>{" "}
         IS YOUR ULTIMATE PROJECT PARTNER
       </h2>
