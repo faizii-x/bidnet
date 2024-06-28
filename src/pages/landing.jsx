@@ -11,7 +11,7 @@ import SecondText from "../components/secondText"
 import ServiceComp from "../components/serviceComp"
 import Steps from "../components/steps"
 import PropsPractise from "../components/propsPractise"
-import StateManage from "../components/stateManage"
+// import StateManage from "../components/stateManage"
 
 
 function Landing() {
@@ -31,7 +31,7 @@ function Landing() {
     {/* <HalfText/> */}
     <PropsPractise/>
 
-<StateManage/>
+{/* <StateManage/> */}
 
     <ServiceComp/>
     <CopyHome/>
