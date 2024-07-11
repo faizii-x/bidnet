@@ -12,6 +12,7 @@ export default {
           "2xl": "6rem",
         },
       },
+      width: ['responsive', 'hover'],
       fontFamily: {
         san: ["Open Sans", "sans-serif"],
       },

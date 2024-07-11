@@ -55,8 +55,8 @@ function AnimatedComp() {
               <p>{currentData.text}</p>
 
               <div className="class-poori-div relative lg:w-[90%] w-full">
-                <img src={currentData.image} alt="Current Data" className="" />
-                <p className="w-[89%] h-[110px] ml-[1px] rounded-md clas-text mx-auto text-center absolute bg-customBlue-light text-white p-3 text-[16px]">
+                <img src={currentData.image} alt="Current Data" className="mx-auto mb-4" />
+                <p className="w-[89%] h-[110px] md:block hidden ml-[1px] rounded-md clas-text mx-auto text-center absolute bg-customBlue-light text-white p-3 text-[16px]">
                   {currentData.para}
                 </p>
               </div>
@@ -66,25 +66,25 @@ function AnimatedComp() {
               <div className="flex justify-center items-center flex-col">
                 <div
                   onClick={() => handleButtonClick("A")}
-                  className="flex justify-center items-center outline-none text-[18px] font-san font-medium border border-white rounded-md transition-[1]  hover:transition-[0.5] cursor-pointer hover:bg-customBlue-dark text-white p-3 mt-1 lg:w-[350px] md:w-[350px] w-full hover:w-[400px]"
+                  className="flex justify-center items-center outline-none text-[18px] font-san font-medium border border-white rounded-md transition-[1]  hover:transition-[0.5] cursor-pointer hover:bg-customBlue-dark text-white p-3 mt-1 lg:w-[350px] md:w-[350px]  w-full hover:lg:w-[400px] hover:md:w-[300px] hover:sm:w-[100px]"
                 >
                   <button>Cost Estimating Services</button>
                 </div>
                 <div
                   onClick={() => handleButtonClick("B")}
-                  className="flex justify-center items-center outline-none  border text-[18px] font-san font-medium border-white cursor-pointer transition-[1]  hover:transition-[0.5] hover:bg-customBlue-dark rounded-md text-white p-3 mt-1 lg:w-[350px] md:w-[350px] w-full hover:w-[400px]"
+                  className="flex justify-center items-center outline-none  border text-[18px] font-san font-medium border-white cursor-pointer transition-[1]  hover:transition-[0.5] hover:bg-customBlue-dark rounded-md text-white p-3 mt-1 lg:w-[350px] md:w-[350px] w-full hover:lg:w-[400px] hover:md:w-[300px] hover:sm:w-[100px]"
                 >
                   <button>Construction Takeoff Services</button>
                 </div>
                 <div
                   onClick={() => handleButtonClick("C")}
-                  className="flex justify-center items-center outline-none  border text-[18px] font-san font-medium border-white cursor-pointer transition-[1]  hover:transition-[0.5] hover:bg-customBlue-dark text-white rounded-md p-3 mt-1 lg:w-[350px] md:w-[350px] w-full hover:w-[400px]"
+                  className="flex justify-center items-center outline-none  border text-[18px] font-san font-medium border-white cursor-pointer transition-[1]  hover:transition-[0.5] hover:bg-customBlue-dark text-white rounded-md p-3 mt-1 lg:w-[350px] md:w-[350px] w-full hover:lg:w-[400px] hover:md:w-[300px] hover:sm:w-[100px]"
                 >
                   <button>CPM Scheduling</button>
                 </div>
                 <div
                   onClick={() => handleButtonClick("D")}
-                  className="flex justify-center items-center outline-none  border text-[18px] font-san font-medium border-white cursor-pointer transition-[1]  hover:transition-[0.5] hover:bg-customBlue-dark text-white p-3 rounded-md mt-1 lg:w-[350px] md:w-[350px] w-full hover:w-[400px]"
+                  className="flex justify-center items-center outline-none  border text-[18px] font-san font-medium border-white cursor-pointer transition-[1]  hover:transition-[0.5] hover:bg-customBlue-dark text-white p-3 rounded-md mt-1 lg:w-[350px] md:w-[350px] w-full hover:lg:w-[400px] hover:md:w-[300px] hover:sm:w-[100px]"
                 >
                   <button>Planning</button>
                 </div>

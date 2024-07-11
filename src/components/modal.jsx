@@ -87,7 +87,7 @@ function Modal({ handleClick }) {
                       <input
                         id="name"
                         type="text"
-                        value={name}
+                        value={name}   
                         onChange={(e) => setName(e.target.value)}
                         className="block w-full  bg-transparent text-white  outline-none"
                         placeholder="Name"
