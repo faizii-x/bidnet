@@ -3,7 +3,7 @@ import picMep from "../../public/png/picMep.png";
 function MepText() {
   return (
     <>
-      <p className="text-[18px] font-san font-semibold text-[#414141] container mx-auto">
+      <p className="text-[18px] font-san font-semibold text-[#414141] container mx-auto mt-8">
         Our Expertise
       </p>
       <p className="text-[16px] mt-1 font-san font-normal container mx-auto text-customBlue-para">

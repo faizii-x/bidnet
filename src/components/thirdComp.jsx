@@ -52,7 +52,7 @@ function ThirdComp() {
           <img src={Resi} alt="Residential Project" className="mb-2" />
         </div>
         <div className="col-span-2 self-center">
-          <h4 className="text-[20px] font-sans font-semibold">RESIDENTIAL</h4>
+          <h3 className="text-[20px] font-sans font-semibold">RESIDENTIAL</h3>
           <p className="text-[18px] font-sans font-normal mt-1">
             For residential projects,{" "}
             <span className="text-customBlue-light font-bold">
@@ -98,7 +98,7 @@ function ThirdComp() {
         </div>
 
         <div className="col-span-2 self-center">
-          <h4 className="text-[20px] font-sans font-semibold">INDUSTRIAL</h4>
+          <h5 className="text-[20px] font-sans font-semibold">INDUSTRIAL</h5>
           <p className="text-[18px] font-sans font-normal mt-1">
             For industrial projects,{" "}
             <span className="text-customBlue-light font-bold">

@@ -17,17 +17,17 @@ function Footer() {
       <p className="font-san text-center text-[18px] pt-2 font-semibold text-white">
           Stay Updated with Our Latest Estimates!
         </p>
-        <div className="bg-white lg:w-[40%] w-[80%] h-[38px]  mx-auto mt-4 mb-8">
+        <div className="bg-white lg:w-[40%] w-[80%] h-[38px]  mx-auto mt-4 mb-8 p-1">
           <div className="sm:flex grid justify-between gap-2 ">
-            <div className="flex justify-start gap-2 pl-2 pt-[5px]">
-              <img src={Messagee} alt="" className="w-[28px] h-[24px]" />
+            <div className="flex justify-start gap-2 pl-2 ">
+              <img src={Messagee} alt="" className="w-[28px] h-[24px] " />
               <input
                 type="text"
                 placeholder="Enter Your Email"
-                className="lg:w-[60%] w-full border-none outline-none -pt-3"
+                className=" w-full border-none h-[30px] outline-none"
               />
             </div>
-            <div className="mx-auto bg-customBlue-dark cursor-pointer rounded-md mt-1 text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
+            <div className="mx-auto bg-customBlue-dark cursor-pointer rounded-md  text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
               <button className="font-san text-[14px]">SUBMIT</button>
             </div>
           </div>

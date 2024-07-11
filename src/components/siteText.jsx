@@ -12,12 +12,12 @@ function SiteText() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Maximize Your Projects with Our{" "}
         <span className="text-customBlue-light">
           Sitework Estimating Services
         </span>
-      </h2>
+      </h3>
 
       <p className="text-customBlue-para text-[18px] font-normal font-san container mx-auto mt-2">
         Our team of expert estimators is dedicated to delivering exceptional

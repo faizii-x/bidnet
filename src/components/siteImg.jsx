@@ -3,14 +3,14 @@ function SiteImg() {
     <>
       <div
         className="max-w-full h-auto bg-cover bg-center  pt-24"
-        style={{ backgroundImage: `url(${"/png/genbg.png"})` }}
+        style={{ backgroundImage: `url(${"/png/sitebg.png"})` }}
       >
         <h1 className="text-white font-san text-center font-bold p-16 text-[26px] pb-2">
           SITEWORK ESTIMATING SERVICES
         </h1>
       </div>
 
-      <p className="text-[18px] mt-6 font-san font-normal text-customBlue-para container mx-auto">
+      <p className="text-[18px] mt-6 mb-2 font-san font-normal text-customBlue-para container mx-auto">
         At{" "}
         <span className="text-customBlue-light font-semibold">
           Bidnet Estimating

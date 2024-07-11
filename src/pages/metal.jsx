@@ -1,6 +1,6 @@
 import MetalImg from "../components/metalImg"
 import MetalText from "../components/metalText"
-// import SliderStyle from "../components/sliderStyle"
+import SliderStyle from "../components/sliderStyle"
 import BannerGeneral from "../components/bannerGeneral"
 import Metbg from "../components/metbg"
 import Software from "../components/software"
@@ -21,7 +21,7 @@ function Metal() {
     <>
     
   <MetalImg/>
-    {/* <SliderStyle/> */}
+    <SliderStyle/>
     <MetalText/>
     <BannerGeneral/>
     <Metbg/>

@@ -1,6 +1,6 @@
 import SiteImg from "../components/siteImg";
 import SiteText from "../components/siteText";
-// import SliderStyle from "../components/sliderStyle";
+import SliderStyle from "../components/sliderStyle";
 import Banner from "../components/banner";
 import SiteTextone from "../components/siteTextone";
 import BgCompSite from "../components/bgCompSite";
@@ -23,7 +23,7 @@ function Sitework() {
   return (
     <>
       <SiteImg />
-      {/* <SliderStyle /> */}
+      <SliderStyle />
       <SiteText />
       <Banner />
       <SiteTextone />

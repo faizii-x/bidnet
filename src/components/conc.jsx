@@ -9,7 +9,7 @@ Aos.init();
   },[])
   return (
     <>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 container mx-auto">
         <div className="col-span-2">
             <p className="text-customBlue-para text-[18px] font-semibold font-san">Our Estimation Process</p>
           <p className="text-customBlue-para text-[18px] font-normal font-san " data-aos="fade-left">

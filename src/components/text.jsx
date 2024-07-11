@@ -13,10 +13,10 @@ function Text() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h5 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Benefits of Construction{" "}
         <span className="text-customBlue-light">Cost Estimating Services</span>
-      </h5>
+      </h4>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mt-8 container mx-auto">
         <div className="lg:col-span-1 col-span-1 md:col-span-2 mx-auto relative">

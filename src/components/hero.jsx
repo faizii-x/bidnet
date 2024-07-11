@@ -1,4 +1,13 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Modal from "./modal";
+
 function Hero() {
+
+  const [clickForm, setClickForm] = useState(false)
+  const handleClick = () => setClickForm(false);
+
+
   return (
     <>
       <div
@@ -15,12 +24,17 @@ function Hero() {
           GET <span className="font-bold">40% OFF</span> ON YOUR FIRST ESTIMATE
         </p>
         <div className="md:flex grid justify-start gap-3 -sm:mt-24 -mt-[90px] p-16 class-media-manage-1">
+        
+      <Link to="/service">
           <div className="border p-3 font-san text-white hover:bg-white hover:text-black cursor-pointer flex justify-center items-center w-[170px]">
             <button>Our Services</button>
           </div>
+          </Link>
+          <a href="tel:+1 917 300 1079">
           <div className=" border p-3 font-san text-white hover:bg-white hover:text-black cursor-pointer flex justify-center items-center w-[170px]">
             <button>Call Now</button>
           </div>
+          </a>
         </div>
       </div>
       {/* .............................. */}
@@ -31,11 +45,12 @@ function Hero() {
             Schedule a Consultation with Our Expert Construction Estimators to
             Discuss Your Project Today!
           </p>
-          <div className="flex justify-center hover:bg-white hover:text-[#004750] cursor-pointer text-white font-san items-center p-2 border w-[230px] mx-auto">
+          <div onClick={() => setClickForm(true)} className="flex justify-center animate-bounce hover:bg-white hover:text-[#004750] cursor-pointer text-white font-san items-center p-2 border w-[230px] mx-auto">
             <button>Book an Appointment</button>
           </div>
         </div>
       </div>
+      {clickForm && <Modal handleClick={handleClick} />}
     </>
   );
 }

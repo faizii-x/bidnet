@@ -11,12 +11,12 @@ function TextGen() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Who Have Benefited from Our{" "}
         <span className="text-customBlue-light">
           Quantity Takeoff Services?
         </span>
-      </h2>
+      </h3>
 
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 container w-[80%] mt-8 mx-auto">
         <div className="lg:col-span-1 col-span-1 md:col-span-2 mx-auto">

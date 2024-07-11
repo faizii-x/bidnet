@@ -13,9 +13,9 @@ function Work() {
   return (
     <>
       <div className="bg-customBlue-dark p-6">
-        <h4 className="text-[24px] font-san font-semibold text-center text-white">
+        <h3 className="text-[24px] font-san font-semibold text-center text-white">
           WORK BREAKDOWN STRUCTURE (WBS)
-        </h4>
+        </h3>
         <p className="text-[16px] mt-1 font-san font-normal text-white w-[90%] mx-auto">
           Before kicking off the Primavera schedule, we craft a Work Breakdown
           Structure (WBS). Our team handles the organization and management of
@@ -107,9 +107,9 @@ function Work() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         SCHEDULING <span className="text-customBlue-light">SOFTWARE'S</span>
-      </h2>
+      </h4>
 
 <div className="grid lg:grid-cols-2  grid-cols-1 gap-5 mt-6 container mx-auto w-[80%]">
 

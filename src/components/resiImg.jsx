@@ -3,7 +3,7 @@ function ResiImg() {
     <>
       <div
         className="max-w-full h-auto bg-cover bg-center  pt-24"
-        style={{ backgroundImage: `url(${"/png/genbg.png"})` }}
+        style={{ backgroundImage: `url(${"/png/resbg.png"})` }}
       >
         <h1 className="text-white font-san text-center font-bold p-16 text-[26px] pb-2">
           RESIDENTIAL ESTIMATING SERVICES

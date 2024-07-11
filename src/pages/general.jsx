@@ -1,6 +1,6 @@
 import BannerGeneral from "../components/bannerGeneral"
 import Generalimg from "../components/generalimg"
-// import SliderStyle from "../components/sliderStyle"
+import SliderStyle from "../components/sliderStyle"
 import TextGen from "../components/textGen"
 import TextGeneral from "../components/textGeneral"
 import Software from "../components/software"
@@ -23,7 +23,7 @@ function General() {
     <>
     
   <Generalimg/>
-  {/* <SliderStyle/> */}
+  <SliderStyle/>
   <TextGeneral/>
   <BannerGeneral/>
   {/* <Login/> */}

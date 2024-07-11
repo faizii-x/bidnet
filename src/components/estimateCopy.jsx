@@ -57,7 +57,7 @@ function EstimateCopy() {
                   approval.
                 </p>
 
-                <button className=" mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[25%] w-[45%] h-auto p-3">
+                <button className=" mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
                 </button>
               </div>
@@ -75,7 +75,7 @@ function EstimateCopy() {
                   approval we can complete the job with appropriate assumptions.
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[25%] w-[45%] h-auto p-3">
+                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
                 </button>
               </div>
@@ -92,7 +92,7 @@ function EstimateCopy() {
                 Our expert estimators provide detailed estimates covering materials and labor. We deliver estimates in EXCEL format, using our template or the client's preference.
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[25%] w-[45%] h-auto p-3">
+                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
                 </button>
               </div>
@@ -118,7 +118,7 @@ function EstimateCopy() {
                   </a>
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[25%] w-[45%] h-auto p-3">
+                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
                 </button>
               </div>
@@ -136,7 +136,7 @@ function EstimateCopy() {
                   the drawings provided by you.
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[25%] w-[45%] h-auto p-3">
+                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
                 </button>
               </div>
@@ -164,7 +164,7 @@ function EstimateCopy() {
               <p className="text-[22px] font-poppins font-bold text-white">
               Get your Estimate
               </p>
-              <p className="text-white text-[18px] font-poppins mt-[6px]">
+              <p className="text-white text-[18px] font-poppins mt-[4px]">
                 Our customer support team will manage to send you a final gutter
                 estimate in EXCEL format.
               </p>

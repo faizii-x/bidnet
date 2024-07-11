@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Big from "../../public/png/big.png";
 import Left from "../../public/png/left.png";
 import Right from "../../public/png/right.png";
+import { Link } from "react-router-dom";
 
 function SecondText() {
 
@@ -32,12 +33,12 @@ function SecondText() {
     <>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 container mx-auto mt-16 ">
         <div className="self-center col-span-1 mx-auto">
-          <p className="text-[26px] font-san font-bold text-customBlue-light">
+          <h5 className="text-[26px] font-san font-bold text-customBlue-light">
             <span className="text-customBlue-para ">
               CONSTRUCTION ESTIMATING SERVICES
             </span>{" "}
             NYC
-          </p>
+          </h5>
           <p className="text-[18px] mt-1 font-san font-normal text-customBlue-para">
             Accurate construction estimating is the cornerstone of any
             successful NYC project. At Bidnet Estimating , our team of seasoned
@@ -46,9 +47,11 @@ function SecondText() {
             We're dedicated to your success in the dynamic New York construction
             landscape.
           </p>
+          <Link to="/nyc">
           <div className="flex justify-center rounded-md items-center p-3 w-[130px] mt-5 hover:text-white hover:bg-customBlue-dark text-customBlue-dark cursor-pointer border-customBlue-light border">
             <button className="text-[18px]">View More</button>
           </div>
+          </Link>
         </div>
         <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto mb-8" >
           <div className="flex justify-start relative">

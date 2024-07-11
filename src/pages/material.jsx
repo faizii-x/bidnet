@@ -57,7 +57,7 @@ function Material() {
       </p>
       <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para mt-6">
         How Our Experts Can Help with{" "}
-        <span className="text-customBlue-light">Material Takeoff?</span>?
+        <span className="text-customBlue-light">Material Takeoff </span>?
       </h2>
 
       <p className="text-[18px] mt-6 font-san font-normal text-customBlue-para container mx-auto">
@@ -71,7 +71,7 @@ function Material() {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:w-[70%] w-full mt-4 mx-auto container ">
         <div>
           <li className="text-[#4B4B4B] text-[16px] font-san">
-            General requirements
+            General Requirements
           </li>
           <li className="text-[#4B4B4B] text-[16px] font-san">Siteworks</li>
           <li className="text-[#4B4B4B] text-[16px] font-san">Concrete</li>

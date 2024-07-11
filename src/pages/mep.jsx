@@ -5,6 +5,7 @@ import TextTwo from "../components/textTwo";
 import Software from "../components/software";
 import Steps from "../components/steps";
 import { useEffect } from "react";
+import SliderStyle from "../components/sliderStyle";
 
 
 function Mep() {
@@ -21,6 +22,7 @@ function Mep() {
       <MepImg />
       <MepCard />
       <MepText />
+      <SliderStyle/>
       <TextTwo />
       <Software/>
       <Steps/>

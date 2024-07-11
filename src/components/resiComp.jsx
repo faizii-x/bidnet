@@ -11,10 +11,10 @@ function ResiComp() {
         <img src={Cap} alt="" className="w-[25px] h-[25px]" />
         <img src={Line} alt="" className="w-[50px] " />
       </div>
-      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Why Choose Bidnet{" "}
         <span className="text-customBlue-light">Estimating Services</span>
-      </h3>
+      </h2>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mt-6 container mx-auto">
         <div className="col-span-2">

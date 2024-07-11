@@ -118,9 +118,9 @@ function LumbComp() {
       </div>
       {/* ........................... */}
       <div className="container mx-auto">
-        <p className="text-[18px] mt-6 font-san font-bold text-customBlue-para ">
+        <h3 className="text-[18px] mt-6 font-san font-bold text-customBlue-para ">
           What Do We Deliver In Our Lumber Takeoffs?
-        </p>
+        </h3>
         <p className="text-[18px] mt-6 font-san font-normal text-customBlue-para ">
           Our lumber takeoff services include detailed estimates for
           timber/lumber, labor, and transportation. Our comprehensive reports

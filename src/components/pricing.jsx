@@ -5,9 +5,9 @@ import Cap from "../../public/png/cap.png";
 function Pricing() {
   return (
     <>
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
+      <h1 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
         PRICING PLANS
-      </h2>
+      </h1>
 
       <p className="text-[18px] mt-6 font-san font-normal text-customBlue-para container mx-auto">
         At Bidnet Estimating, we understand the importance of flexibility when
@@ -15,9 +15,9 @@ function Pricing() {
         services. Instead, we offer customized pricing plans tailored to each
         project's unique requirements.
       </p>
-      <h3 className="text-[18px] mt-1 font-san font-semibold text-customBlue-para container mx-auto">
+      <h2 className="text-[18px] mt-1 font-san font-semibold text-customBlue-para container mx-auto">
         Customized Pricing:{" "}
-      </h3>
+      </h2>
       <p className="text-[18px] font-san font-normal text-customBlue-para container mx-auto">
         We charge on a per-project basis, ensuring that you only pay for the
         services you need. This allows us to provide fair and transparent
@@ -31,9 +31,9 @@ function Pricing() {
         project size. We keep our prices low to empower you to bid on more
         projects without breaking the bank.
       </p>
-      <h3 className="text-[18px] mt-1 font-san font-semibold text-customBlue-para container mx-auto">
+      <h4 className="text-[18px] mt-1 font-san font-semibold text-customBlue-para container mx-auto">
         Range of Fees:
-      </h3>
+      </h4>
       <p className="text-[18px] font-san font-normal text-customBlue-para container mx-auto">
         The estimated fee for a project can vary based on its scope and size.
         Our fees typically range from $75 to $550 or more, depending on the
@@ -49,9 +49,9 @@ function Pricing() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h5 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         SIMPLE AND <span className="text-customBlue-light font-medium">AFFORDABLE PRICING</span> PLANS
-      </h2>
+      </h5>
 
       {/* ..................................... */}
 

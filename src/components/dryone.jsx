@@ -11,10 +11,10 @@ function Dryone() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Our Approach To{" "}
         <span className="text-customBlue-light">Dry Wall Estimating</span>
-      </h4>
+      </h3>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 mt-8 container mx-auto">
         <div className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto">
@@ -39,9 +39,9 @@ function Dryone() {
         </div>
       </div>
       {/* ........................... */}
-      <h5 className="text-[24px] font-san font-semibold text-center mt-6 text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center mt-6 text-customBlue-para">
         List Of Our Clients
-      </h5>
+      </h4>
 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[60%] mt-6 container mx-auto">
     <div>
         <li className="Text-[16px] font-san text-customBlue-para">GENERAL CONTRACTORS</li>

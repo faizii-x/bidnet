@@ -19,10 +19,12 @@ function Project() {
             <p className="text-white text-[26px] font-san font-bold">
               Get Accurate Construction Estimates Every Time!
             </p>
+        <a href="tel:+1 917 300 1079">
             <div className="bg-white rounded-md w-[180px] flex justify-center items-center p-2 mt-4 mb-2">
               <button className="font-san text-[#28B5B5]">Contact Today</button>
               <img src={Call1} alt="" />
             </div>
+            </a>
           </div>
         </div>
       </div>

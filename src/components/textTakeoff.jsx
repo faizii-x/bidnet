@@ -13,10 +13,10 @@ function TextTakeoff() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h5 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h6 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
       What Do Our Construction{" "}
         <span className="text-customBlue-light">Takeoff Services Include?</span>
-      </h5>
+      </h6>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mt-8 container mx-auto">
         <div className="lg:col-span-1 col-span-1 md:col-span-2 mx-auto relative">

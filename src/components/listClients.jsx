@@ -12,9 +12,9 @@ function ListClients() {
           <img src={Home} alt="" className="lg:h-[300px] h-auto"/>
         </div>
         <div>
-        <h5 className="text-[24px] font-san font-semibold text-customBlue-para">
+        <h6 className="text-[24px] font-san font-semibold text-customBlue-para">
         The Range of Landscaping Estimating Service
-      </h5>
+      </h6>
           <li className="text-[16px] mt-1 font-san font-semibold">
           Landscaping Estimating
           </li>

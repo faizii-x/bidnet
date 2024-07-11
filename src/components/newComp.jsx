@@ -75,9 +75,9 @@ function NewComp() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         LIST OF OUR <span className="text-customBlue-light">CLIENTS</span>
-      </h2>
+      </h3>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 container w-[60%] mt-8 mx-auto">
         <div>

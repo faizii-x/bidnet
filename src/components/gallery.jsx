@@ -17,9 +17,9 @@ function Gallery() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         PROJECTS <span className="text-customBlue-light">GALLERY</span>
-      </h2>
+      </h4>
 
       {/* ............................... */}
 

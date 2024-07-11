@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 
-function HalfText({imageSrc, title, description, buttonText}) {
+function HalfText({imageSrc, title, description, buttonText, link}) {
   return (
     <>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-6">
@@ -14,9 +15,11 @@ function HalfText({imageSrc, title, description, buttonText}) {
           <p className="text-[18px] mt-1 font-san font-normal text-customBlue-para">
            {description}
           </p>
+          <Link to={link}>
           <div className="flex justify-center items-center p-2 w-[130px] mt-5 text-customBlue-dark cursor-pointer border-customBlue-light border">
             <button>{buttonText}</button>
           </div>
+          </Link>
         </div>
       </div>
     </>

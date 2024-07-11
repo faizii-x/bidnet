@@ -1,130 +1,152 @@
-
-// import Slider from "react-slick";
-// import Picy from "../../public/png/picy.png";
-// import Picy1 from "../../public/png/picy1.png";
-
-// function SliderStyle() {
-//   const settings = {
-//     dots: false,
-//     arrows: true,
-//     autoplay: true,
-//     infinite: false,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     vertical: true,
-//     verticalSwiping: true,
-
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           infinite: true,
-//           dots: false,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//         },
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div
-//       className="max-w-full h-auto bg-cover bg-center p-3 mt-8"
-//       style={{ backgroundImage: `url(${"/png/bggeneral.png"})` }}
-//     >
-//       <div className="container mx-auto">
-//         <Slider {...settings}>
-//           <div className="grid grid-cols-2 gap-3 p-3">
-//             <div className="col-span-1">
-//               <p className="text-white font-sans font-semibold text-[18px] mt-6">
-//                 Advanced Technology
-//               </p>
-//               <p className="text-white font-sans font-light text-[16px] mt-2">
-//                 We leverage cutting-edge technology and software to deliver
-//                 precise and efficient estimates. Our use of advanced tools
-//                 ensures high accuracy and efficiency, setting us apart in the
-//                 industry.
-//               </p>
-//             </div>
-//             <div className="col-span-1 flex items-center justify-center mx-auto">
-//               <img src={Picy} alt="Technology Image 1" />
-//             </div>
-//           </div>
-//           <div className="grid grid-cols-3 gap-3 p-3">
-//             <div className="col-span-2">
-//               <p className="text-white font-sans font-semibold text-[18px] mt-6">
-//                 Advanced Technology
-//               </p>
-//               <p className="text-white font-sans font-light text-[16px] mt-2">
-//                 We leverage cutting-edge technology and software to deliver
-//                 precise and efficient estimates. Our use of advanced tools
-//                 ensures high accuracy and efficiency, setting us apart in the
-//                 industry.
-//               </p>
-//             </div>
-//             <div className="col-span-1">
-//               <img src={Picy1} alt="" />
-//             </div>
-//           </div>
-//         </Slider>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default SliderStyle;
-
-
-
-import { useEffect } from 'react';
+import Slider from "react-slick";
+import Picy from "../../public/png/picy.png";
+import Picy1 from "../../public/png/picy1.png";
+import Picy4 from "../../public/png/picy4.png";
+import Picy5 from "../../public/png/picy5.png";
 
 function SliderStyle() {
-  useEffect(() => {
-    let currentIndex = 1;
-    const slideCount = 3;
-
-    const autoSlide = () => {
-      const nextIndex = (currentIndex % slideCount) + 1;
-      document.getElementById(`s${nextIndex}`).checked = true;
-      currentIndex = nextIndex;
-    };
-
-    const interval = setInterval(autoSlide, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+  var settings = {
+    dots: false,
+    autoplay: true,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  // ......................
+  var settings1 = {
+    dots: false,
+    autoplay: true,
+    infinite: true,
+    arrows: false,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
-    <>
-      <section id="slider">
-        <input type="radio" name="slider" id="s1" />
-        <input type="radio" name="slider" id="s2" />
-        <input type="radio" name="slider" id="s3" defaultChecked />
-        <label htmlFor="s1" id="slide1"></label>
-        <label htmlFor="s2" id="slide2"></label>
-        <label htmlFor="s3" id="slide3"></label>
-        <div className="radio-buttons">
-          <label htmlFor="s1" className="radio-label"></label>
-          <label htmlFor="s2" className="radio-label"></label>
-          <label htmlFor="s3" className="radio-label"></label>
+    <div
+      className="max-w-full h-auto bg-cover bg-center p-3 mt-8"
+      style={{ backgroundImage: `url(${"/png/bggeneral.png"})` }}
+    >
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 container mx-auto">
+        <div className="col-span-2 self-center">
+          <Slider {...settings1}>
+            <div className="">
+              <p className="text-white text-[18px] font-san font-bold">
+                Advanced Technology
+              </p>
+              <p className="text-white mt-1 text-[16px] font-san font-light">
+                We leverage cutting-edge technology and software to deliver
+                precise and efficient estimates. Our use of advanced tools
+                ensures high accuracy and efficiency, setting us apart in the
+                industry.
+              </p>
+            </div>
+            <div>
+              <p className="text-white text-[18px] font-san font-bold">
+                Customer-Focused Service
+              </p>
+              <p className="text-white mt-1 text-[16px] font-san font-light">
+                Your satisfaction is our priority. We work closely with you,
+                maintaining open lines of communication and providing updates
+                throughout the estimating process. Our commitment to exceptional
+                customer service ensures a smooth and stress-free experience.
+              </p>
+            </div>
+            <div>
+              <p className="text-white text-[18px] font-san font-bold">
+                Cost Efficiency
+              </p>
+              <p className="text-white mt-1 text-[16px] font-san font-light">
+                Our goal is to help you maximize your budget without
+                compromising on quality. Through detailed and precise cost
+                estimates, we identify potential savings and provide
+                cost-effective solutions that keep your project within budget.
+              </p>
+            </div>
+            <div>
+              <p className="text-white text-[18px] font-san font-bold">
+                Flexible Trades
+              </p>
+              <p className="text-white mt-1 text-[16px] font-san font-light">
+                At UK Estimators, we recognize that every project is unique. We
+                provide customized estimating services that cater to your
+                specific requirements, ensuring that each estimate reflects your
+                project’s unique scope and challenges.
+              </p>
+            </div>
+          </Slider>
         </div>
-      </section>
-    </>
+
+        <div className="col-span-1">
+      
+          <Slider {...settings}>
+            <img src={Picy} alt="" />
+            <img src={Picy1} alt="" />
+            <img src={Picy4} alt="" />
+            <img src={Picy5} alt="" />
+          </Slider>
+        </div>
+       
+      </div>
+
+    </div>
   );
 }
 

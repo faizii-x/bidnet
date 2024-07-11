@@ -3,6 +3,7 @@ import MechText from "../components/mechText"
 import MechanicalImg from "../components/mechanicalImg"
 import Software from "../components/software"
 import Steps from "../components/steps"
+import SliderStyle from "../components/sliderStyle"
 
 function Mechanical() {
 
@@ -17,6 +18,7 @@ function Mechanical() {
     <>
     
     <MechanicalImg/>
+    <SliderStyle/>
     <MechText/>
     <Software/>
     <Steps/>

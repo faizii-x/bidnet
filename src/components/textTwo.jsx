@@ -107,9 +107,9 @@ function TextTwo() {
       {/* ,................................. */}
 
       <div className="bg-[#C4EDF3] p-3 container mx-auto w-[90%] rounded-xl mt-6">
-        <p className="text-[16px] font-san font-bold">
+        <h3 className="text-[16px] font-san font-bold">
         Are You Overspending On MEP Estimating Services?
-        </p>
+        </h3>
         <p className="text-[16px] font-san font-light mt-2">
           Bidnet Estimating is a trusted leader in construction cost estimation,
           focusing on accuracy, affordability, and reliability. Our mission is

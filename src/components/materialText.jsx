@@ -50,12 +50,12 @@ function MaterialText() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Who Have Benefited from Our{" "}
         <span className="text-customBlue-light">
           Material Takeoff Services?
         </span>
-      </h2>
+      </h4>
 
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 w-[70%] container mt-8 mx-auto">
         <div className="lg:col-span-1 col-span-1 md:col-span-2 mx-auto">
@@ -111,10 +111,10 @@ function MaterialText() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para mt-4">
+      <h5 className="text-[24px] font-san font-semibold text-center text-customBlue-para mt-4">
         Quantity Takeoff{" "}
         <span className="text-customBlue-light">Service Area</span>
-      </h4>
+      </h5>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 container mx-auto mt-2">
         <div  className="col-span-2 self-center">
           <p className="text-[18px] font-san font-light">

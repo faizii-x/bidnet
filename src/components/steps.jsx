@@ -13,9 +13,9 @@ function Steps() {
         <img src={Pro} alt="" className="w-[25px] h-[25px]" />
         <img src={Line} alt="" className="w-[50px] " />
       </div>    
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h6 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         STEPS FOR <span className="text-customBlue-light">ESTIMATION</span>
-      </h2>
+      </h6>
 
       <div className="lg:w-[60%] w-[80%] container mx-auto mt-8">
         <ol className="relative  border-s border-dashed border-customBlue-light ">

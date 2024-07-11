@@ -13,15 +13,15 @@ function Payment() {
 
   return (
     <>
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
+      <h1 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
         PAYMENT
-      </h2>
+      </h1>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto">
         <div className="col-span-2">
-          <h3 className="text-[18px] font-san font-semibold  text-customBlue-para mt-6">
+          <h2 className="text-[18px] font-san font-semibold  text-customBlue-para mt-6">
             Refund Policy:
-          </h3>
+          </h2>
           <p className="text-[16px] font-san font-normal text-[#434343] mt-1">
             While we are dedicated to ensuring complete client satisfaction, we
             do not offer refunds. However, we are committed to facilitating
@@ -35,9 +35,9 @@ function Payment() {
       <Banner />
 
       <div className=" container mx-auto">
-        <h4 className="text-[18px] font-san font-semibold  text-customBlue-para mt-6">
+        <h3 className="text-[18px] font-san font-semibold  text-customBlue-para mt-6">
           Payment Terms:
-        </h4>
+        </h3>
         <p className="text-[16px] font-san font-normal text-[#434343] mt-1">
           At{" "}
           <span className="text-customBlue-light font-medium">

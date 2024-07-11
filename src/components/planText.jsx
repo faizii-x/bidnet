@@ -45,9 +45,9 @@ function PlanText() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
       What is Construction Master Plan?
-      </h2>
+      </h3>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-6">
         <div className="col-span-2 self-center opacity-0" ref={textRef}  >

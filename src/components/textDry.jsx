@@ -12,10 +12,10 @@ function TextDry() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Expert Drywall Estimating Services By{" "}
         <span className="text-customBlue-light">Bidnet Estimating</span>
-      </h4>
+      </h2>
 
       <p className="text-[18px] mt-6 font-san font-normal text-customBlue-para container mx-auto">
         At <span className="text-customBlue-light">Bidnet Estimating</span>, we

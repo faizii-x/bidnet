@@ -17,9 +17,9 @@ function MechText() {
     <>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto">
         <div className="col-span-2" data-aos="fade-right">
-          <p className="text-[18px] mt-6 font-san font-bold text-customBlue-para ">
+          <h2 className="text-[18px] mt-6 font-san font-bold text-customBlue-para ">
             Accurate Estimates for Mechanical Piping Contractors
-          </p>
+          </h2>
           <p className="text-[18px] mt-1 font-san font-normal text-customBlue-para ">
             {" "}
             As a leading MEP estimating team, we deliver highly accurate
@@ -45,10 +45,10 @@ function MechText() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Our Range Of Mechanical{" "}
         <span className="text-customBlue-light">Estimating Services</span>
-      </h2>
+      </h3>
       {/* ................................. */}
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-6 lg:w-[80%] w-full container mx-auto">
@@ -140,12 +140,12 @@ function MechText() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Who Has Benefited from Our{" "}
         <span className="text-customBlue-light">
           Mechanical Estimating Services?
         </span>
-      </h3>
+      </h4>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:w-[70%] w-full mt-4 mx-auto container ">
         <div className="self-center">

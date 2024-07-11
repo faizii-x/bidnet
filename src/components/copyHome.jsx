@@ -17,13 +17,13 @@ function CopyHome() {
           <img src={Line} alt="" className="w-[50px] " />
         </div>
 
-        <h2 className="text-[24px] font-san font-semibold text-center container mx-auto text-customBlue-para">
+        <h3 className="text-[24px] font-san font-semibold text-center container mx-auto text-customBlue-para">
         WHY{" "}
         <span className="text-customBlue-light font-semibold">
           BIDNET ESTIMATING
         </span>{" "}
         IS YOUR ULTIMATE PROJECT PARTNER
-      </h2>
+      </h3>
 
       <p className="text-[18px] font-san font-normal text-center mt-1 text-customBlue-para container mx-auto">
         Many contractors miss out on opportunities due to limited resources for

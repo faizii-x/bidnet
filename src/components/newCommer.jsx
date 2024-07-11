@@ -11,10 +11,10 @@ function NewCommer() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Our Range Of Commercial{" "}
         <span className="text-customBlue-light">Estimating Services</span>
-      </h3>
+      </h2>
 
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 container w-[80%] mt-8 mx-auto">
         <div className="col-span-2 ">

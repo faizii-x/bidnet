@@ -5,6 +5,7 @@ import HvacComp from "../components/hvacComp";
 import ImgComp from "../components/imgComp";
 import Software from "../components/software";
 import Steps from "../components/steps";
+import SliderStyle from "../components/sliderStyle";
 
 
 function Hvac() {
@@ -18,11 +19,11 @@ function Hvac() {
   return (
     <>
       <HavacImg />
+      <SliderStyle/>
       <HvacComp />
       <BannerGeneral />
       <ImgComp />
       <Software />
-
       <Steps />
     </>
   );

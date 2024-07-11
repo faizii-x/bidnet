@@ -3,9 +3,9 @@ import Aboutimg from "../../public/png/aboutimg.png";
 function AboutComp() {
   return (
     <>
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
+      <h1 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
         ABOUT US
-      </h2>
+      </h1>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-6">
         <div className="col-span-2">

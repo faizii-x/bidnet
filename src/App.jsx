@@ -30,6 +30,9 @@ import Commercial from "./pages/commercial";
 import Industrial from "./pages/industrial";
 import Residential from "./pages/residential";
 import Lumber from "./pages/lumber";
+import Thermal from "./pages/thermal";
+import Interior from "./pages/interior";
+import Nyc from "./pages/nyc";
 
 function App() {
   return (
@@ -64,6 +67,9 @@ function App() {
           <Route path="/industrial" element={<Industrial />} />
           <Route path="/residential" element={<Residential />} />
           <Route path="/lumber" element={<Lumber />} />
+          <Route path="/thermal" element={<Thermal />} />
+          <Route path="/interior" element={<Interior />} />
+          <Route path="/nyc" element={<Nyc />} />
           <Route path="/*" element={<PageNotFound />} />
 
         </Routes>

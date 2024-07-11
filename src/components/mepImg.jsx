@@ -3,7 +3,7 @@ function MepImg() {
     <>
       <div
         className="max-w-full h-auto bg-cover bg-center  pt-24"
-        style={{ backgroundImage: `url(${"/png/genbg.png"})` }}
+        style={{ backgroundImage: `url(${"/png/mepbg.png"})` }}
       >
         <h1 className="text-white font-san text-center font-bold p-16 text-[26px] pb-2">
           MEP ESTIMATING SERVICES
@@ -21,6 +21,11 @@ function MepImg() {
         deadlines effectively. Our comprehensive MEP estimating solutions have
         consistently helped general contractors secure successful bids.
       </p>
+      {/* .................................. */}
+
+
+
+      
     </>
   );
 }

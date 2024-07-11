@@ -1,55 +1,22 @@
-
-
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 function EstimationCards() {
-
   useEffect(() => {
     Aos.init();
   }, []);
-
-
-    // const [isVisible, setIsVisible] = useState(false);
-    // const ref = useRef();
-  
-    // useEffect(() => {
-    //   const observer = new IntersectionObserver(
-    //     (entries) => {
-    //       entries.forEach((entry) => {
-    //         if (entry.isIntersecting) {
-    //           setIsVisible(true);
-    //           observer.disconnect(); // Disconnect after the first trigger to prevent re-triggering
-    //         }
-    //       });
-    //     },
-    //     { threshold: 0.1 } // Adjust the threshold as needed
-    //   );
-  
-    //   if (ref.current) {
-    //     observer.observe(ref.current);
-    //   }
-  
-    //   return () => {
-    //     if (ref.current) {
-    //       observer.unobserve(ref.current);
-    //     }
-    //   };
-    // }, []);
-  
 
   return (
     <>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-8">
         <div
-        //  className={`bg-white rounded-3xl shadow-lg p-6 h-[500px] clas-height-set mt-6 ${isVisible ? "animate-jump-up" : ""}`}
-        className="bg-white hover:bg-blue-50 rounded-3xl shadow-lg p-6 h-[500px] clas-height-set mt-6" data-aos="zoom-in"
+          className="bg-white hover:bg-blue-50 hover:shadow-2xl rounded-3xl shadow-lg p-6 h-[500px] clas-height-set mt-6"
+          data-aos="zoom-in"
         >
-          <h5 className="text-[18px] font-semibold text-[#414141] text-center font-san">
+          <p className="text-[18px] font-semibold text-[#414141] text-center font-san">
             SINGLE TRADE PRICING
-          </h5>
+          </p>
           <p className="text-[16px] font-semibold text-[#414141] font-san mt-[3px]">
             Features
           </p>
@@ -57,32 +24,32 @@ function EstimationCards() {
             We charge ($150 to $500) for a single trade project and the cost
             will vary on project Complexity.
           </p>
-          
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san mt-[3px]">
-              Turnaround Time 24 to 48 Hrs
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Any Trade or Any Kind of Project
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Free Quote Within 5 to 10 Minutes
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Free Consultation
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Imediate and Unlimited Revisions
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              24/7 Email Support
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Live Chat and Call Support
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              No Hidden Charges
-            </li>
-        
+
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san mt-[3px]">
+            Turnaround Time 24 to 48 Hrs
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Any Trade or Any Kind of Project
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Free Quote Within 5 to 10 Minutes
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Free Consultation
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Immediate and Unlimited Revisions
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            24/7 Email Support
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Live Chat and Call Support
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            No Hidden Charges
+          </li>
+
           <p className="text-[16px] font-normal text-[#414141] font-san mt-[5px]">
             Starting from
           </p>
@@ -93,56 +60,56 @@ function EstimationCards() {
             <button>Get Started</button>
           </div>
         </div>
-
+        {/* ........................ */}
         <div
-        //  className={`bg-customBlue-light rounded-3xl shadow-lg p-6 clas-height-set h-[550px] ${isVisible ? "animate-jump-up" : ""}`}
-         className="bg-customBlue-light hover:bg-[#2b94a1] 00 rounded-3xl shadow-lg p-6 clas-height-set h-[550px]" data-aos="zoom-in"
-         >
-        
-          <h5 className="text-[18px] font-semibold text-white text-center font-san">
+          className="bg-customBlue-light hover:shadow-2xl rounded-3xl shadow-lg p-6 clas-height-set h-[550px]"
+          data-aos="zoom-in"
+        >
+          <p className="text-[18px] font-semibold text-white text-center font-san">
             MONTHLY PACKAGES
-          </h5>
+          </p>
           <p className="text-[16px] font-normal text-white font-san mt-[3px]">
             Features
           </p>
           <p className="text-[16px] text-white text-center mt-[3px] font-normal font-san">
-            We charge ($1500 to $2500) for a projects and the cost will vary on project Complexity.
+            We charge ($1500 to $2500) for a projects and the cost will vary on
+            project Complexity.
           </p>
-        
-            <li className="text-[16px] text-white font-normal font-san mt-[3px]">
-              Turnaround Time 24 to 48 Hrs
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Any Trade or Any Kind of Project
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Free Quote Within 5 to 10 Minutes
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Free Consultation
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Imediate and Unlimited Revisions
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              24/7 Email Support
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Live Chat and Call Support
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              No Hidden Charges
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              10 to 15 Projects
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Bid Filing and Consultation
-            </li>
-            <li className="text-[16px] text-white font-normal font-san">
-              Material Takeoffs and Cost Management
-            </li>
-          
+
+          <li className="text-[16px] text-white font-normal font-san mt-[3px]">
+            Turnaround Time 24 to 48 Hrs
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Any Trade or Any Kind of Project
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Free Quote Within 5 to 10 Minutes
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Free Consultation
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Imediate and Unlimited Revisions
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            24/7 Email Support
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Live Chat and Call Support
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            No Hidden Charges
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            10 to 15 Projects
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Bid Filing and Consultation
+          </li>
+          <li className="text-[16px] text-white font-normal font-san">
+            Material Takeoffs and Cost Management
+          </li>
+
           <p className="text-[16px] font-normal text-white font-san mt-[5px]">
             Starting from
           </p>
@@ -153,40 +120,40 @@ function EstimationCards() {
             <button>Get Started</button>
           </div>
         </div>
-
+        {/* ............................. */}
         <div
-        //  className={`bg-white rounded-3xl shadow-lg p-6 clas-height-set h-[500px] mt-6 ${isVisible ? "animate-jump-up" : ""}`}
-         className="bg-white hover:bg-blue-50 rounded-3xl shadow-lg p-6 clas-height-set h-[500px] mt-6" data-aos="zoom-in"
-         >
-          <h5 className="text-[18px] font-semibold text-[#414141] text-center font-san">
+          className="bg-white hover:bg-blue-50 hover:shadow-2xl rounded-3xl shadow-lg p-6 clas-height-set h-[500px] mt-6"
+          data-aos="zoom-in"
+        >
+          <p className="text-[18px] font-semibold text-[#414141] text-center font-san">
             ENTERPRISE
-          </h5>
+          </p>
           <p className="text-[16px] font-normal text-[#414141] font-san mt-[3px]">
             Features
           </p>
           <p className="text-[16px] text-[#4B4B4B] text-center mt-[3px] font-normal font-san">
             Terms and Conditions apply:
           </p>
-        
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san mt-[19px]">
-              Dedicated Resources
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Manage the bidding network profiles
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Material Takeoffs
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Cost Management
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Preconstruction & Change Order Management
-            </li>
-            <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
-              Subcontractor Marketing
-            </li>
-          
+
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san mt-[19px]">
+            Dedicated Resources
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Manage the bidding network profiles
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Material Takeoffs
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Cost Management
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Preconstruction & Change Order Management
+          </li>
+          <li className="text-[16px] text-[#4B4B4B] font-normal font-san">
+            Subcontractor Marketing
+          </li>
+
           <p className="text-[16px] font-normal text-[#414141] font-san mt-[10px]">
             Starting from
           </p>
@@ -197,6 +164,7 @@ function EstimationCards() {
             <button>Call Now</button>
           </div>
         </div>
+        {/* .......................... */}
       </div>
     </>
   );

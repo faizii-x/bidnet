@@ -6,7 +6,7 @@ function MetalImg() {
     <>
       <div
         className="max-w-full h-auto bg-cover bg-center  pt-24"
-        style={{ backgroundImage: `url(${"/png/genbg.png"})` }}
+        style={{ backgroundImage: `url(${"/png/metibg.png"})` }}
       >
         <h1 className="text-white font-san text-center font-bold p-16 text-[26px] pb-2">
           METALS ESTIMATING SERVICES
@@ -23,7 +23,7 @@ function MetalImg() {
         provide precise projections that meet your specific project
         requirements.
       </p>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-2 container mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-2 mb-2 container mx-auto">
         <div className="col-span-2">
           <p className="text-[16px] font-san font-semibold ">Key Features:</p>
           <div className="flex justify-start gap-3 mt-2">

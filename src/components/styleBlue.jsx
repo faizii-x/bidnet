@@ -42,10 +42,10 @@ function StyleBlue() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Efficient{" "}
         <span className="text-customBlue-light">Project Scheduling</span>
-      </h3>
+      </h2>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 container mx-auto mt-6">
         <div className="col-span-1 lg:col-span-1 md:col-span-2 mx-auto">

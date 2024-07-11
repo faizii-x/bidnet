@@ -1,8 +1,8 @@
 import Line from "../../public/png/line.png";
 import dot from "../../public/png/dot.png";
+import Site3 from "../../public/png/site3.png";
 import Cap from "../../public/png/cap3.png";
 import Site2 from "../../public/png/site2.png";
-import Site3 from "../../public/png/site3.png";
 
 function SiteTextone() {
   return (
@@ -13,10 +13,10 @@ function SiteTextone() {
         <img src={Line} alt="" className="w-[50px] " />
       </div>
 
-      <h3 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h4 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         Our SiteWork Estimating Services{" "}
         <span className="text-customBlue-light">Overview</span>
-      </h3>
+      </h4>
 
       <p className="text-customBlue-para text-[18px] font-normal font-san container mx-auto mt-2">
         Every sitework project is different. At{" "}

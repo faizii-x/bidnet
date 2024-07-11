@@ -5,9 +5,9 @@ function FirstTrade() {
     <>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto pt-24">
         <div className="col-span-2 self-center">
-          <h2 className="text-[24px] font-san font-semibold text-customBlue-para">
+          <h1 className="text-[24px] font-san font-semibold text-customBlue-para">
             Bidnet Estimating: Superior Trades Solutions for the USA
-          </h2>
+          </h1>
           <p className="text-[18px] font-san font-light">
             Choose <span className="text-customBlue-light font-medium">Bidnet Estimating</span> for exceptional trade services, customized
             for clients in the United States. Our dedicated team provides expert

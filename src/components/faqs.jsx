@@ -12,9 +12,9 @@ function Faqs() {
           <img src={Faq} alt="" className="w-[25px] h-[22px]" />
           <img src={Line} alt="" className="w-[50px] " />
         </div>
-        <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+        <h6 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         FAQS
-      </h2>
+      </h6>
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto container mt-8">
         <div className="col-span-2 mb-4">
         <Sliders/>

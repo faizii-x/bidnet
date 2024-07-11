@@ -1,6 +1,7 @@
 import Line from "../../public/png/line.png";
 import Cap from "../../public/png/cap.png";
 import Man from "../../public/png/man.gif";
+import { Link } from "react-router-dom";
 
 function ServiceComp() {
   return (
@@ -32,9 +33,11 @@ function ServiceComp() {
               comprehensive planning, our team is dedicated to ensuring the
               success of your projects.
             </p>
+            <a href="tel:+1 917 300 1079">
             <div className="bg-customBlue-dark p-3 w-[150px] text-white font-san mt-6 rounded-lg cursor-pointer hover:border-customBlue-dark border hover:bg-white hover:text-customBlue-dark flex justify-center items-center mx-auto">
               <button>Contact Us</button>
             </div>
+            </a>
           </div>
         </div>
         <div className="col-span-1">
@@ -51,9 +54,11 @@ function ServiceComp() {
                 ensures accurate breakdowns of expenses from materials to labor,
                 helping you stay on budget and make informed decisions.
               </p>
+              <Link to="/cost">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
+              </Link>
             </div>
           </div>
 
@@ -71,9 +76,11 @@ function ServiceComp() {
                 realistic schedules for your construction project, keeping
                 everything on track from start to finish.
               </p>
+              <Link to="/cpm">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,9 +99,11 @@ function ServiceComp() {
                 cover all aspects, including Material Takeoff and Quantity
                 Takeoff.
               </p>
+              <Link to="/takeoff">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
+              </Link>
             </div>
           </div>
 
@@ -112,9 +121,11 @@ function ServiceComp() {
                 for the project's progression. Note, strategizing doesn't equate
                 to scheduling.
               </p>
+              <Link to="/plan">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
+              </Link>
             </div>
           </div>
         </div>

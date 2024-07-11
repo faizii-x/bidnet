@@ -20,10 +20,10 @@ function Software() {
         <img src={Line} alt="" className="w-[50px]" />
       </div>
 
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
+      <h6 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         SOFTWARE'S{" "}
         <span className="text-customBlue-light font-medium"> WE USE</span>
-      </h2>
+      </h6>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mt-6">
         <img src={Onelog} alt="" className="mx-auto " data-aos="fade-right" />

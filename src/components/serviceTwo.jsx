@@ -5,9 +5,9 @@ function ServiceTwo() {
     <>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto pt-24">
         <div className="col-span-2 self-center">
-          <h2 className="text-[24px] font-san font-semibold text-customBlue-para">
+          <h1 className="text-[24px] font-san font-semibold text-customBlue-para">
             Your Trusted Partner for Construction Estimating Services
-          </h2>
+          </h1>
           <p className="text-[18px] font-san font-light">
             {" "}
             <span className="text-customBlue-light font-medium">

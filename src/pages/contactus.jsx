@@ -27,37 +27,37 @@ function ContactUs() {
 
   return (
     <>
-      <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
+      <h1 className="text-[24px] font-san font-semibold text-center text-customBlue-para pt-24">
         CONTACT US
-      </h2>
+      </h1>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 w-[80%] container mx-auto mt-8">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-3 w-[70%] container mx-auto mt-8">
         <div className="col-span-1 ">
-          <p className="text-center text-black font-san text-[24px] font-semibold">
+          <p className=" text-black font-san text-[24px] font-semibold">
             GET IN <span className="text-customBlue-light">TOUCH</span>
           </p>
-          <p className="mt-3 text-[18px] font-san font-normal">Name</p>
+          <p className="mt-3 text-[15px] font-san font-semibold">Name</p>
           <input
             type="text"
             placeholder="Muhammad Faizan"
             className="lg:w-[70%] w-full mt-2  outline-none border-b"
           />
 
-          <p className="mt-3 text-[18px] font-san font-normal">Email</p>
+          <p className="mt-3 text-[15px] font-san font-semibold">Email</p>
           <input
             type="text"
             placeholder="faizanramzan670@gmail.com"
             className="lg:w-[70%] w-full mt-2  outline-none border-b"
           />
 
-          <p className="mt-3 text-[18px] font-san font-normal">Phone Number</p>
+          <p className="mt-3 text-[15px] font-san font-semibold">Phone Number</p>
           <input
             type="text"
             placeholder="03085170759"
             className="lg:w-[70%] w-full mt-2  outline-none border-b"
           />
 
-          <p className="mt-3 text-[18px] font-san font-normal">Message</p>
+          <p className="mt-3 text-[15px] font-san font-semibold">Message</p>
           <textarea
             cols={30}
             rows={1}
@@ -83,7 +83,7 @@ function ContactUs() {
             </svg>
           </div>
         </div>
-        <div className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto " data-aos="zoom-in">
+        <div className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto self-center" data-aos="fade-right">
           <img src={Cont} alt="" className=" lg:h-[400px] h-auto mx-auto" />
         </div>
       </div>
