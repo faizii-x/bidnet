@@ -33,43 +33,51 @@ import Lumber from "./pages/lumber";
 import Thermal from "./pages/thermal";
 import Interior from "./pages/interior";
 import Nyc from "./pages/nyc";
+import CostNyc from "./pages/costNyc";
+import Landscape from "./pages/landscape";
+import Rebar from "./pages/rebar";
+import Roofing from "./pages/roofing";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
+      <Navbar/>   
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/estimating" element={<Estimating />} />
-          <Route path="/trade" element={<Trade />} />
-          <Route path="/cost" element={<Cost />} />
-          <Route path="/takeoff" element={<Takeoff />} />
-          <Route path="/cpm" element={<Cpm />} />
-          <Route path="/quantity" element={<Quantity />} />
-          <Route path="/material" element={<Material />} />
-          <Route path="/plan" element={<Plan />} />
-          <Route path="/general" element={<General />} />
-          <Route path="/sitework" element={<Sitework />} />
-          <Route path="/concrete" element={<Concrete />} />
-          <Route path="/metal" element={<Metal />} />
-          <Route path="/drywall" element={<Drywall />} />
-          <Route path="/hvac" element={<Hvac />} />
-          <Route path="/mep" element={<Mep />} />
-          <Route path="/mechanical" element={<Mechanical />} />
-          <Route path="/electrical" element={<Electrical />} />
-          <Route path="/plumbing" element={<Plumbing />} />
-          <Route path="/commercial" element={<Commercial />} />
-          <Route path="/industrial" element={<Industrial />} />
-          <Route path="/residential" element={<Residential />} />
-          <Route path="/lumber" element={<Lumber />} />
-          <Route path="/thermal" element={<Thermal />} />
-          <Route path="/interior" element={<Interior />} />
-          <Route path="/nyc" element={<Nyc />} />
+          <Route path="/services/" element={<Service />} />
+          <Route path="/contact-us/" element={<ContactUs />} />
+          <Route path="/payment/" element={<Payment />} />
+          <Route path="/about-us/" element={<About />} />
+          <Route path="/estimating-fee/" element={<Estimating />} />
+          <Route path="/our-trades/" element={<Trade />} />
+          <Route path="/cost-estimating-services/" element={<Cost />} />
+          <Route path="/construction-takeoff-services/" element={<Takeoff />} />
+          <Route path="/cpm-scheduling/" element={<Cpm />} />
+          <Route path="/quantity-takeoff-services/" element={<Quantity />} />
+          <Route path="/material-takeoff-services/" element={<Material />} />
+          <Route path="/planning/" element={<Plan />} />
+          <Route path="/general-requirements/" element={<General />} />
+          <Route path="/sitework-estimating-services/" element={<Sitework />} />
+          <Route path="/concrete-estimating-services/" element={<Concrete />} />
+          <Route path="/metals-estimating-services/" element={<Metal />} />
+          <Route path="/drywall-estimating-services/" element={<Drywall />} />
+          <Route path="/hvac-estimating-services/" element={<Hvac />} />
+          <Route path="/mep-estimating-services/" element={<Mep />} />
+          <Route path="/mechanical-estimating-services/" element={<Mechanical />} />
+          <Route path="/electrical-estimating-services/" element={<Electrical />} />
+          <Route path="/plumbing-estimating-services/" element={<Plumbing />} />
+          <Route path="/commercial-estimating-services/" element={<Commercial />} />
+          <Route path="/industrial-estimating-services/" element={<Industrial />} />
+          <Route path="/residential-estimating-services/" element={<Residential />} />
+          <Route path="/lumber-takeoff-services/" element={<Lumber />} />
+          <Route path="/thermal-moisture-protection-estimating-services/" element={<Thermal />} />
+          <Route path="/interior-exterior-finishes/" element={<Interior />} />
+          <Route path="/construction-estimating-services-nyc/" element={<Nyc />} />
+          <Route path="/construction-cost-estimating-services-nyc/" element={<CostNyc />} />
+          <Route path="/landscaping-estimating-services/" element={<Landscape />} />
+          <Route path="/rebar-estimating-services/" element={<Rebar />} />
+          <Route path="/roofing-estimating-services/" element={<Roofing />} />
           <Route path="/*" element={<PageNotFound />} />
 
         </Routes>

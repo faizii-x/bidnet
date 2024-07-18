@@ -1,4 +1,3 @@
-import Logo from "../../public/png/logo.png";
 import Logo2 from "../../public/png/logo2.png";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -66,13 +65,13 @@ function Navbar() {
                   </h2>
                 </Link>
                 <div className="relative group ">
-                    <Link to="/service">
+                    <Link to="/services">
                       <div
                         id="multiLevelDropdownButton"
                         className="flex justify-start gap-1"
                       >
                         <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light cursor-pointer">
-                          {pathname === "/Service" ? (
+                          {pathname === "/Services" ? (
                             <div className=" text-customBlue-light">
                              Services
                             </div>
@@ -107,14 +106,14 @@ function Navbar() {
                       >
                         <li>
                           <a
-                            href="/cost"
+                            href="/cost-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Cost Estimating Services
                           </a>
                         </li>
                         <li className="relative group">
-                          <Link to="/takeoff">
+                          <Link to="/construction-takeoff-services/">
                           <button
                             id="doubleDropdownButton"
                             type="button"
@@ -148,7 +147,7 @@ function Navbar() {
                             >
                               <li>
                                 <a
-                                  href="/material"
+                                  href="/material-takeoff-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Material Takeoff Services
@@ -156,7 +155,7 @@ function Navbar() {
                               </li>
                               <li>
                                 <a
-                                  href="/quantity"
+                                  href="/quantity-takeoff-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Quantity Takeoff Services
@@ -172,7 +171,7 @@ function Navbar() {
                     
                         <li>
                           <a
-                            href="/cpm"
+                            href="/cpm-scheduling/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             CPM Scheduling
@@ -182,7 +181,7 @@ function Navbar() {
                         
                         <li>
                           <a
-                            href="/plan"
+                            href="/planning"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Planning
@@ -198,13 +197,13 @@ function Navbar() {
                 
 
                   <div className="relative group">
-                    <Link to="/trade">
+                    <Link to="/our-trades/">
                       <div
                         id="multiLevelDropdownButton"
                         className="flex justify-start gap-1"
                       >
                         <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light cursor-pointer">
-                          {pathname === "/trade" ? (
+                          {pathname === "/our-trades/" ? (
                             <div className=" text-customBlue-light">
                               Our Trades
                             </div>
@@ -239,14 +238,14 @@ function Navbar() {
                       >
                         <li>
                           <a
-                            href="/general"
+                            href="/general-requirements/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             General Requirements
                           </a>
                         </li>
                         <li className="relative group">
-                          <Link to="/sitework">
+                          <Link to="/sitework-estimating-services/">
                           <button
                             id="doubleDropdownButton"
                             type="button"
@@ -280,7 +279,7 @@ function Navbar() {
                             >
                               <li>
                                 <a
-                                  href="/sitework"
+                                  href="/landscaping-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Landscaping Estimating Services
@@ -291,14 +290,14 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/concrete"
+                            href="/concrete-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Concrete Estimating Services
                           </a>
                         </li>
                         <li className="relative group">
-                          <Link to="/metal">
+                          <Link to="/metals-estimating-services/">
                           <button
                             id="doubleDropdownButton"
                             type="button"
@@ -332,7 +331,7 @@ function Navbar() {
                             >
                               <li>
                                 <a
-                                  href="/metal"
+                                  href="/rebar-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Rebar Estimating Services
@@ -343,7 +342,7 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="#"
+                            href="/drywall-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Drywall Estimating Services
@@ -351,7 +350,7 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/hvac"
+                            href="/hvac-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             HVAC Estimating Services
@@ -359,14 +358,14 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/lumber"
+                            href="/lumber-takeoff-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Lumber Takeoff Services
                           </a>
                         </li>
                         <li className="relative group">
-                          <Link to="/mep">
+                          <Link to="/mep-estimating-services/">
                           <button
                             id="doubleDropdownButton"
                             type="button"
@@ -400,7 +399,7 @@ function Navbar() {
                             >
                               <li>
                                 <a
-                                  href="/mechanical"
+                                  href="/mechanical-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Mechanical Estimating Services
@@ -408,7 +407,7 @@ function Navbar() {
                               </li>
                               <li>
                                 <a
-                                  href="/electrical"
+                                  href="/electrical-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Electrical Estimating Services
@@ -416,7 +415,7 @@ function Navbar() {
                               </li>
                               <li>
                                 <a
-                                  href="/plumbing"
+                                  href="/plumbing-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Plumbing Estimating Services
@@ -426,7 +425,7 @@ function Navbar() {
                           </div>
                         </li>
                         <li className="relative group">
-                          <Link to="/thermal">
+                          <Link to="/thermal-moisture-protection-estimating-services/">
                           <button
                             id="doubleDropdownButton"
                             type="button"
@@ -460,7 +459,7 @@ function Navbar() {
                             >
                               <li>
                                 <a
-                                  href="/thermal"
+                                  href="/roofing-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Roofing Estimating Services
@@ -472,7 +471,7 @@ function Navbar() {
 
                         <li>
                           <a
-                            href="/interior"
+                            href="/interior-exterior-finishes/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Interior & Exterior Finishes
@@ -480,7 +479,7 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/commercial"
+                            href="/commercial-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Commercial Estimating Services
@@ -488,7 +487,7 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/residential"
+                            href="/residential-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Residential Estimating Services
@@ -496,7 +495,7 @@ function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/industrial"
+                            href="/industrial-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Industrial Estimating Services
@@ -506,10 +505,10 @@ function Navbar() {
                     </div>
                   </div>
                 
-                <Link to="/about/">
+                <Link to="/about-us/">
                   <div className="flex justify-start gap-1">
                     <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light">
-                      {pathname === "/about/" ? (
+                      {pathname === "/about-us/" ? (
                         <div className="text-customBlue-light">About Us</div>
                       ) : (
                         "About Us"
@@ -528,9 +527,9 @@ function Navbar() {
                   </h2>
                 </Link>
 
-                <Link to="/estimating/">
+                <Link to="/estimating-fee/">
                   <h2 className="text-[15px]  font-san font-semibold hover:text-customBlue-light ">
-                    {pathname === "/estimating/" ? (
+                    {pathname === "/estimating-fee/" ? (
                       <div className="text-customBlue-light">
                         {" "}
                         Estimating fee

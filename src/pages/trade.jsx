@@ -6,6 +6,36 @@ import { useEffect, useState } from "react";
 import Fast from "../../public/png/shield.gif";
 
 function Trade() {
+  const [email, setEmail] = useState("");
+
+  const Emailchangefunction = (e) => {
+    setEmail(e.target.value);
+  };
+  console.log(email);
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+
+    formData.append("email", email);
+
+    try {
+      const response = await fetch("https://api.quickbidestimating.com/", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.status === 200) {
+        alert("Email sent successfully");
+        setEmail("");
+      } else {
+        alert("Email sending failed");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Email sending failed");
+    }
+  };
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -70,21 +100,25 @@ function Trade() {
             <span className="text-customBlue-dark font-bold"> $1500</span> to{" "}
             <span className="text-customBlue-dark font-bold"> $2500</span>
           </p>
-
-          <div className="flex justify-center items-center">
-            <input
-              type="text"
-              placeholder="Enter Your Email"
-              className="border w-[250px] mt-3"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-          <div
-            className="flex justify-center items-center border w-[130px] p-2 mx-auto mt-3 cursor-pointer bg-customBlue-light text-white"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button>Send</button>
-          </div>
+          <form onFormSubmit={onSubmit}>
+            <div className="flex justify-center items-center">
+              <input
+                required
+                type="text"
+                value={email}
+                onChange={Emailchangefunction}
+                placeholder="Enter Your Email"
+                className="border w-[250px] mt-3"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </div>
+            <div
+              className="flex justify-center items-center border w-[130px] p-2 mx-auto mt-3 cursor-pointer bg-customBlue-light text-white"
+              // onClick={(e) => e.stopPropagation()}
+            >
+              <button>Send</button>
+            </div>
+          </form>
         </div>
       </div>
 

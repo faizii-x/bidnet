@@ -47,7 +47,7 @@ function SecondText() {
             We're dedicated to your success in the dynamic New York construction
             landscape.
           </p>
-          <Link to="/nyc">
+          <Link to="/construction-estimating-services-nyc/">
           <div className="flex justify-center rounded-md items-center p-3 w-[130px] mt-5 hover:text-white hover:bg-customBlue-dark text-customBlue-dark cursor-pointer border-customBlue-light border">
             <button className="text-[18px]">View More</button>
           </div>

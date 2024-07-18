@@ -6,8 +6,43 @@ import Facebook from "../../public/png/facebook.png";
 import Linkedin from "../../public/png/linkedin.png";
 import Insta from "../../public/png/insta.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Footer() {
+
+  const [email, setEmail] = useState("");
+  const [disableButton, setDisableButton] = useState(true);
+
+  const Emailchangefunction = (e) => {
+    setEmail(e.target.value);
+    setDisableButton(!disableButton);
+  };
+  console.log(email);
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+
+    formData.append("email", email);
+
+    try {
+      const response = await fetch("https://api.quickbidestimating.com/", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.status === 200) {
+        alert("Email sent successfully");
+        setEmail("");
+      } else {
+        alert("Email sending failed");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Email sending failed");
+    }
+  };
+
+
   return (
     <>
    
@@ -18,19 +53,26 @@ function Footer() {
           Stay Updated with Our Latest Estimates!
         </p>
         <div className="bg-white lg:w-[40%] w-[80%] h-[38px]  mx-auto mt-4 mb-8 p-1">
+          <form onFormSubmit={onSubmit}>
           <div className="sm:flex grid justify-between gap-2 ">
             <div className="flex justify-start gap-2 pl-2 ">
               <img src={Messagee} alt="" className="w-[28px] h-[24px] " />
+              
               <input
+              required
                 type="text"
+                value={email}
+              onChange={Emailchangefunction}
                 placeholder="Enter Your Email"
                 className=" w-full border-none h-[30px] outline-none"
               />
             </div>
-            <div className="mx-auto bg-customBlue-dark cursor-pointer rounded-md  text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
+            <div  
+            className="mx-auto bg-customBlue-dark cursor-pointer rounded-md  text-white p-1 w-[100px] border flex justify-center items-center self-center mr-2 ">
               <button className="font-san text-[14px]">SUBMIT</button>
             </div>
           </div>
+            </form>
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 w-[90%] container mx-auto mt-6">
           <div className="col-span-1">
@@ -46,27 +88,27 @@ function Footer() {
               </Link>
               <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                to="/about"
+                to="/about-us/"
               >
                 About Us
               </Link>
               <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                to="/service"
+                to="/services/"
               >
                 Services
               </Link>
 
               <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                to="/payment"
+                to="/payment/"
               >
                 Payment
               </Link>
 
               <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                to="/contact-us"
+                to="/contact-us/"
               >
                 Contact Us 
               </Link>
@@ -80,26 +122,26 @@ function Footer() {
             <div className="grid justify-start gap-1 mt-3">
               <a
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/cost"
+                href="/cost-estimating-services/"
               >
                 Construction Cost Estimating
               </a>
               <a
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/takeoff"
+                href="/construction-takeoff-services/"
               >
                 Construction Takeoff
               </a>
 
               <a
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/cpm"
+                href="/cpm-scheduling/"
               >
                 CPM Scheduling
               </a>
               <a
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/plan"
+                href="/planning/"
               >
                 Planning
               </a>

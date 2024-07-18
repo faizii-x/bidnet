@@ -54,7 +54,7 @@ function ServiceComp() {
                 ensures accurate breakdowns of expenses from materials to labor,
                 helping you stay on budget and make informed decisions.
               </p>
-              <Link to="/cost">
+              <Link to="/cost-estimating-services/">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
@@ -76,7 +76,7 @@ function ServiceComp() {
                 realistic schedules for your construction project, keeping
                 everything on track from start to finish.
               </p>
-              <Link to="/cpm">
+              <Link to="/cpm-scheduling/">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
@@ -99,7 +99,7 @@ function ServiceComp() {
                 cover all aspects, including Material Takeoff and Quantity
                 Takeoff.
               </p>
-              <Link to="/takeoff">
+              <Link to="/construction-takeoff-services/">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>
@@ -121,7 +121,7 @@ function ServiceComp() {
                 for the project's progression. Note, strategizing doesn't equate
                 to scheduling.
               </p>
-              <Link to="/plan">
+              <Link to="/planning/">
               <div className="flex justify-center items-center p-2 border w-[110px] rounded-lg ml-3 text-white cursor-pointer hover:bg-customBlue-dark">
                 <button>Read More</button>
               </div>

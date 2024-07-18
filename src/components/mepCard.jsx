@@ -17,13 +17,13 @@ function MepCard() {
     <>
     
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 container mx-auto mt-8" data-aos="fade-up">
-      <Link to="/mechanical">
+      <Link to="/mechanical-estimating-services/">
       <img src={Onemep} alt="" className="mx-auto"/>
       </Link>
-      <Link to="/electrical">
+      <Link to="/electrical-estimating-services/">
       <img src={Twomep} alt="" className="mx-auto"/>
       </Link>
-      <Link to="/plumbing">
+      <Link to="/plumbing-estimating-services/">
       <img src={Threemep} alt="" className="mx-auto"/>
       </Link>
     </div>

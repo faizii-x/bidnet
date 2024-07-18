@@ -16,14 +16,13 @@ import Fast from "../../public/png/shield.gif";
 
 function Landing() {
   const [email, setEmail] = useState("");
-  const [disableButton, setDisableButton] = useState(true);
 
   const Emailchangefunction = (e) => {
     setEmail(e.target.value);
-    setDisableButton(!disableButton);
+    
   };
   console.log(email);
-  const onFormSubmit = async (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
 
@@ -105,8 +104,10 @@ function Landing() {
             Accurate cost predictions for confident bidding
             <br /> and securing the best deals.
           </p>
+          <form onFormSubmit={onSubmit}>
           <div className="flex justify-center items-center">
             <input
+            required
               type="text"
               value={email}
               onChange={Emailchangefunction}
@@ -115,17 +116,17 @@ function Landing() {
               onClick={(e) => e.stopPropagation()}
             />
           </div>
-          <div
-            disabled={disableButton}
-            onClick={onFormSubmit}
+          <div    
+            
             className="flex justify-center items-center border w-[130px] p-2 mx-auto mt-3 cursor-pointer bg-customBlue-light text-white"
             // onClick={(e) => e.stopPropagation()}
           >
             <button>Send</button>
           </div>
+          </form>
         </div>
       </div>
-
+    
       <Hero />
       {/* <HalfText/> */}
       <PropsPractise />
