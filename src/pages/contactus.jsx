@@ -12,58 +12,37 @@ import Facee from "../../public/png/facee.png";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactUs() {
-  const [selectedFileName, setSelectedFileName] = useState(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleFileChange = (e) => {
-    setSelectedFileName(e.target.files[0]);
-  };
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [Contact, setContact] = useState("");
-  const [filelink, setFileLink] = useState("");
-  const [Requirements, setRequirements] = useState("");
-  const [attachment, setAttachment] = useState(null);
-  const [disableButton, setDisableButton] = useState(true);
-
-  const Emailchangefunction = (e) => {
-    setEmail(e.target.value);
-    setDisableButton(!disableButton);
-  };
-  console.log(email);
-  const onFormSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("Contact", Contact);
-    formData.append("attachment", selectedFileName);
-    formData.append("link", filelink);
-    formData.append("Requirements", Requirements);
-
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
     try {
-      const response = await fetch("https://api.quickbidestimating.com/", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (response.status === 200) {
-        alert("Email sent successfully");
-        setEmail("");
-        setName("");
-        setContact("");
-        setFileLink("");
-        setRequirements("");
-        setAttachment("");
-        setSelectedFileName("");
+      const { data: response } = await axios.post(
+        `${process.env.REACT_APP_SERVER_URL}/front/contact/submit`,
+        data
+      );
+      if (response.success) {
+        toast.success(response.message || "Message sent successfully!");
+        reset(); // Clear form fields after successful submission
       } else {
-        alert("Email sending failed");
+        toast.error(response.message || "Failed to send message.");
       }
     } catch (error) {
-      console.error("Error sending email:", error);
-      alert("Email sending failed");
+      toast.error("Unexpected error occurred!");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -73,6 +52,7 @@ function ContactUs() {
       behavior: "smooth",
     });
   }, []);
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -85,70 +65,97 @@ function ContactUs() {
 
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-3 w-[70%] container mx-auto mt-8">
         <div className="col-span-1 ">
-          <p className=" text-black font-san text-[24px] font-semibold">
+          <p className="text-black font-san text-[24px] font-semibold">
             GET IN <span className="text-customBlue-light">TOUCH</span>
           </p>
-          <p className="mt-3 text-[15px] font-san font-semibold">Name</p>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Muhammad Faizan"
-            className="lg:w-[70%] w-full mt-2  outline-none border-b"
-          />
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <p className="mt-3 text-[15px] font-san font-semibold">Name</p>
+            <input
+              type="text"
+              placeholder="Enter your Name"
+              className="lg:w-[70%] w-full mt-2 outline-none border-b"
+              {...register("name", { required: "Name is required" })}
+            />
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+            )}
 
-          <p className="mt-3 text-[15px] font-san font-semibold">Email</p>
-          <input
-            type="text"
-            value={email}
-            onChange={Emailchangefunction}
-            placeholder="faizanramzan670@gmail.com"
-            className="lg:w-[70%] w-full mt-2  outline-none border-b"
-          />
+            <p className="mt-3 text-[15px] font-san font-semibold">Email</p>
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              className="lg:w-[70%] w-full mt-2 outline-none border-b"
+              {...register("email", { 
+                required: "Email is required",
+                pattern: {
+                  value: /^\S+@\S+$/i,
+                  message: "Enter a valid email address",
+                },
+              })}
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+            )}
 
-          <p className="mt-3 text-[15px] font-san font-semibold">
-            Phone Number
-          </p>
-          <input
-            type="text"
-            placeholder="03085170759"
-            value={Contact}
-            onChange={(e) => setContact(e.target.value)}
-            className="lg:w-[70%] w-full mt-2  outline-none border-b"
-          />
+            <p className="mt-3 text-[15px] font-san font-semibold">
+              Phone Number
+            </p>
+            <input
+              type="text"
+              placeholder="Enter your Phone Number"
+              className="lg:w-[70%] w-full mt-2 outline-none border-b"
+              {...register("phoneNo", { required: "Phone number is required" })}
+            />
+            {errors.phoneNo && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.phoneNo.message}
+              </p>
+            )}
 
-          <p className="mt-3 text-[15px] font-san font-semibold">Message</p>
-          <textarea
-            cols={30}
-            rows={1}
-            type="text"
-            value={Requirements}
-            onChange={(e) => setRequirements(e.target.value)}
-            placeholder="Write your message..."
-            className="mb-5 lg:w-[70%] w-full mt-2 outline-none border-b resize-none"
-          />
-          <div
-            disabled={disableButton}
-            onClick={onFormSubmit}
-            className="flex justify-center hover:shadow-lg cursor-pointer gap-2 rounded-lg mb-5 items-center lg:w-[70%] w-full bg-customBlue-light p-3 text-white"
-          >
-            <button>Send Message</button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="h-5 w-5 "
+            <p className="mt-3 text-[15px] font-san font-semibold">Message</p>
+            <textarea
+              cols={30}
+              rows={1}
+              placeholder="Enter your Message"
+              className="mb-5 lg:w-[70%] w-full mt-2 outline-none border-b resize-none"
+              {...register("message", { required: "Message is required" })}
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+            )}
+
+            <div
+              className={`flex justify-center hover:shadow-lg cursor-pointer gap-2 rounded-lg mb-5 items-center lg:w-[70%] w-full bg-customBlue-light p-3 text-white ${
+                isSubmitting ? "opacity-50" : ""
+              }`}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="flex items-center"
+              >
+                {isSubmitting ? "Submitting..." : "Send Message"}
+                {!isSubmitting && (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-5 w-5 ml-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </form>
         </div>
+
         <div
           className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto self-center"
           data-aos="fade-right"
@@ -156,14 +163,13 @@ function ContactUs() {
           <img src={Cont} alt="" className=" lg:h-[400px] h-auto mx-auto" />
         </div>
       </div>
-      {/* .................................... */}
+
       <Banner />
-      {/* ................................. */}
 
       <div className="flex justify-center items-center gap-2 mt-6">
-        <img src={Line} alt="" className="w-[50px] " />
+        <img src={Line} alt="" className="w-[50px]" />
         <img src={Loc} alt="" className="w-[25px] h-[25px]" />
-        <img src={Line} alt="" className="w-[50px] " />
+        <img src={Line} alt="" className="w-[50px]" />
       </div>
       <h2 className="text-[24px] font-san font-semibold text-center text-customBlue-para">
         LOCATION
@@ -201,11 +207,9 @@ function ContactUs() {
 
           <p className="text-[16px] font-san font-normal mt-6 text-[#414141]">
             We have mentioned our phone number and mail address as well, on our
-            site . We are just one click away from you. Contact us for any
-            construction estimation service, construction takeoffs and other
-            such mentioned services at our website. Further, you can write to us
-            by uploading your plan or any estimation service you want. So, save
-            your precious money and catch us.
+            site. We are just one click away from you. Contact us for any
+            construction estimation service, construction takeoffs, and other
+            such mentioned services on our website.
           </p>
 
           <div className="flex justify-start gap-5 mt-6">

@@ -105,12 +105,12 @@ function Navbar() {
                         aria-labelledby="multiLevelDropdownButton"
                       >
                         <li>
-                          <a
-                            href="/cost-estimating-services/"
+                          <Link
+                            to="/cost-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Cost Estimating Services
-                          </a>
+                          </Link>
                         </li>
                         <li className="relative group">
                           <Link to="/construction-takeoff-services/">
@@ -146,20 +146,20 @@ function Navbar() {
                               aria-labelledby="doubleDropdownButton"
                             >
                               <li>
-                                <a
-                                  href="/material-takeoff-services/"
+                                <Link
+                                  to="/material-takeoff-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Material Takeoff Services
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  href="/quantity-takeoff-services/"
+                                <Link
+                                  to="/quantity-takeoff-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Quantity Takeoff Services
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -170,22 +170,22 @@ function Navbar() {
                         
                     
                         <li>
-                          <a
-                            href="/cpm-scheduling/"
+                          <Link
+                            to="/cpm-scheduling/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             CPM Scheduling
-                          </a>
+                          </Link>
                         </li>
                       
                         
                         <li>
-                          <a
-                            href="/planning"
+                          <Link
+                            to="/planning"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Planning
-                          </a>
+                          </Link>
                         </li>
                        
                       </ul>
@@ -237,12 +237,12 @@ function Navbar() {
                         aria-labelledby="multiLevelDropdownButton"
                       >
                         <li>
-                          <a
-                            href="/general-requirements/"
+                          <Link
+                            to="/general-requirements/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             General Requirements
-                          </a>
+                          </Link>
                         </li>
                         <li className="relative group">
                           <Link to="/sitework-estimating-services/">
@@ -278,23 +278,23 @@ function Navbar() {
                               aria-labelledby="doubleDropdownButton"
                             >
                               <li>
-                                <a
-                                  href="/landscaping-estimating-services/"
+                                <Link
+                                  to="/landscaping-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Landscaping Estimating Services
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </li>
                         <li>
-                          <a
-                            href="/concrete-estimating-services/"
+                          <Link
+                            to="/concrete-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Concrete Estimating Services
-                          </a>
+                          </Link>
                         </li>
                         <li className="relative group">
                           <Link to="/metals-estimating-services/">
@@ -330,39 +330,39 @@ function Navbar() {
                               aria-labelledby="doubleDropdownButton"
                             >
                               <li>
-                                <a
-                                  href="/rebar-estimating-services/"
+                                <Link
+                                  to="/rebar-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Rebar Estimating Services
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </li>
                         <li>
-                          <a
-                            href="/drywall-estimating-services/"
+                          <Link
+                            to="/drywall-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Drywall Estimating Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/hvac-estimating-services/"
+                          <Link
+                            to="/hvac-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             HVAC Estimating Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/lumber-takeoff-services/"
+                          <Link
+                            to="/lumber-takeoff-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Lumber Takeoff Services
-                          </a>
+                          </Link>
                         </li>
                         <li className="relative group">
                           <Link to="/mep-estimating-services/">
@@ -398,28 +398,28 @@ function Navbar() {
                               aria-labelledby="doubleDropdownButton"
                             >
                               <li>
-                                <a
-                                  href="/mechanical-estimating-services/"
+                                <Link
+                                  to="/mechanical-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Mechanical Estimating Services
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  href="/electrical-estimating-services/"
+                                <Link
+                                  to="/electrical-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Electrical Estimating Services
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  href="/plumbing-estimating-services/"
+                                <Link
+                                  to="/plumbing-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Plumbing Estimating Services
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -458,48 +458,48 @@ function Navbar() {
                               aria-labelledby="doubleDropdownButton"
                             >
                               <li>
-                                <a
-                                  href="/roofing-estimating-services/"
+                                <Link
+                                  to="/roofing-estimating-services/"
                                   className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                                 >
                                   Roofing Estimating Services
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </li>
 
                         <li>
-                          <a
-                            href="/interior-exterior-finishes/"
+                          <Link
+                            to="/interior-exterior-finishes/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Interior & Exterior Finishes
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/commercial-estimating-services/"
+                          <Link
+                            to="/commercial-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Commercial Estimating Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/residential-estimating-services/"
+                          <Link
+                            to="/residential-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Residential Estimating Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/industrial-estimating-services/"
+                          <Link
+                            to="/industrial-estimating-services/"
                             className="block px-4 py-2 hover:bg-customBlue-light hover:text-white"
                           >
                             Industrial Estimating Services
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>

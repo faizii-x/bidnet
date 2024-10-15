@@ -49,11 +49,11 @@ function Footer() {
       {/* ................................ */}
 
       <div className="bg-[#004750] w-[96%] round-class mx-auto p-2 mt-16">
-      <p className="font-san text-center text-[18px] pt-2 font-semibold text-white">
+      {/* <p className="font-san text-center text-[18px] pt-2 font-semibold text-white">
           Stay Updated with Our Latest Estimates!
         </p>
-        <div className="bg-white lg:w-[40%] w-[80%] h-[38px]  mx-auto mt-4 mb-8 p-1">
-          <form onFormSubmit={onSubmit}>
+        <div className="bg-white lg:w-[40%] w-[80%] h-[38px] mx-auto mt-4 mb-8 p-1">
+          <form onFormSubmit={onSubmit} className="">
           <div className="sm:flex grid justify-between gap-2 ">
             <div className="flex justify-start gap-2 pl-2 ">
               <img src={Messagee} alt="" className="w-[28px] h-[24px] " />
@@ -73,7 +73,7 @@ function Footer() {
             </div>
           </div>
             </form>
-        </div>
+        </div> */}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 w-[90%] container mx-auto mt-6">
           <div className="col-span-1">
             <p className="text-[16px] font-san text-white font-bold">

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./index.css";
+import { ToastContainer } from "react-toastify";
 import Landing from "./pages/landing";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
@@ -37,10 +37,12 @@ import CostNyc from "./pages/costNyc";
 import Landscape from "./pages/landscape";
 import Rebar from "./pages/rebar";
 import Roofing from "./pages/roofing";
+import "./index.css";
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <BrowserRouter>
       <Navbar/>   
         <Routes>

@@ -25,7 +25,7 @@ function Hero() {
         </p>
         <div className="md:flex grid justify-start gap-3 -sm:mt-24 -mt-[90px] p-16 class-media-manage-1">
         
-      <Link to="/service">
+      <Link to="/services">
           <div className="border p-3 font-san text-white hover:bg-white hover:text-black cursor-pointer flex justify-center items-center w-[170px]">
             <button>Our Services</button>
           </div>
