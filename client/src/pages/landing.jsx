@@ -12,37 +12,37 @@ import ServiceComp from "../components/serviceComp";
 import Steps from "../components/steps";
 import PropsPractise from "../components/propsPractise";
 import Fast from "../../public/png/shield.gif";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { useForm } from "react-hook-form";
 // import StateManage from "../components/stateManage"
 
 function Landing() {
-  const [email, setEmail] = useState("");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const Emailchangefunction = (e) => {
-    setEmail(e.target.value);
-    
-  };
-  console.log(email);
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-
-    formData.append("email", email);
-
+  const onSubmit = async (formData) => {
+    setIsSubmitting(true);
     try {
-      const response = await fetch("https://api.quickbidestimating.com/", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (response.status === 200) {
-        alert("Email sent successfully");
-        setEmail("");
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_SERVER_URL}/front/contact/submit`,
+        formData
+      );
+      if (data?.success) {
+        toast.success(data?.message || "Message sent successfully!");
+        reset(); // Clear form fields after successful submission
       } else {
-        alert("Email sending failed");
+        toast.error(data?.message || "Failed to send message.");
       }
     } catch (error) {
-      console.error("Error sending email:", error);
-      alert("Email sending failed");
+      toast.error("Unexpected error occurred!");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -74,7 +74,7 @@ function Landing() {
         onClick={closePopup}
       >
         <div
-          className="border-2 cursor-pointer hover:bg-customBlue-light border-white mr-1 w-[30px] h-[25px] rounded-lg -mt-[214px] flex justify-center items-center"
+          className="border-2 cursor-pointer hover:bg-customBlue-light border-white mr-1 w-[30px] h-[25px] rounded-lg -mt-[420px] flex justify-center items-center"
           onClick={(e) => e.stopPropagation()}
         >
           <svg
@@ -91,40 +91,103 @@ function Landing() {
         </div>
 
         <div
-          className={`popup-container ${showPopup ? "show" : ""}`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className="flex justify-start gap-8">
-            <img src={Fast} alt="" className="w-[60px] h-[60px] -mt-5" />
-            <p className="text-customBlue-light text-center font-san text-[18px] font-semibold">
-              Bid Better, Save Bigger!
-            </p>
-          </div>
-          <p className="text-customBlue-light text-center font-san text-[18px] font-light">
-            Accurate cost predictions for confident bidding
-            <br /> and securing the best deals.
-          </p>
-          <form onFormSubmit={onSubmit}>
-          <div className="flex justify-center items-center">
-            <input
-            required
-              type="text"
-              value={email}
-              onChange={Emailchangefunction}
-              placeholder="Enter Your Email"
-              className="border w-[250px] mt-3"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-          <div    
-            
-            className="flex justify-center items-center border w-[130px] p-2 mx-auto mt-3 cursor-pointer bg-customBlue-light text-white"
-            // onClick={(e) => e.stopPropagation()}
-          >
-            <button>Send</button>
-          </div>
-          </form>
+      className={`popup-container ${showPopup ? "show" : ""}`}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <div className="flex justify-start gap-8">
+        <img src={Fast} alt="Fast" className="w-[60px] h-[60px] -mt-5" />
+        <p className="text-customBlue-light text-center font-san text-[18px] font-semibold">
+          Bid Better, Save Bigger!
+        </p>
+      </div>
+      <p className="text-customBlue-light text-center font-san text-[18px] font-light">
+        Accurate cost predictions for confident bidding
+        <br /> and securing the best deals.
+      </p>
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+        {/* Name Input Field */}
+        <div className="flex justify-center items-center">
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            className="border w-[250px] mt-3 outline-none"
+            {...register("name", { required: "Name is required" })}
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
+        {errors.name && (
+          <p className="text-red-500 text-sm mt-1 text-center">
+            {errors.name.message}
+          </p>
+        )}
+
+        {/* Email Input Field */}
+        <div className="flex justify-center items-center">
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            className="border w-[250px] mt-3 outline-none"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Enter a valid email address",
+              },
+            })}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+        {errors.email && (
+          <p className="text-red-500 text-sm mt-1 text-center">
+            {errors.email.message}
+          </p>
+        )}
+
+        {/* Phone Number Input Field */}
+        <div className="flex justify-center items-center">
+          <input
+            type="text"
+            placeholder="Enter Your Phone Number"
+            className="border w-[250px] mt-3 outline-none"
+            {...register("phoneNo", { required: "Phone number is required" })}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+        {errors.phoneNo && (
+          <p className="text-red-500 text-sm mt-1 text-center">
+            {errors.phoneNo.message}
+          </p>
+        )}
+
+        {/* Message Input Field */}
+        <div className="flex justify-center items-center">
+          <textarea
+            rows={3}
+            placeholder="Enter Your Message"
+            className="border w-[250px] mt-3 outline-none resize-none"
+            {...register("message", { required: "Message is required" })}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+        {errors.message && (
+          <p className="text-red-500 text-sm mt-1 text-center">
+            {errors.message.message}
+          </p>
+        )}
+
+        {/* Submit Button */}
+        <div
+          className={`flex justify-center items-center mt-3  ${
+            isSubmitting ? "opacity-50" : ""
+          } text-white`}
+        >
+          <button type="submit" className="border w-[130px] bg-customBlue-light p-2 mx-auto" disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Send"}
+          </button>
+        </div>
+      </form>
+    </div>
       </div>
     
       <Hero />
