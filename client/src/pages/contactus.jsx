@@ -26,18 +26,18 @@ function ContactUs() {
   } = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (formData) => {
     setIsSubmitting(true);
     try {
-      const { data: response } = await axios.post(
-        `${process.env.REACT_APP_SERVER_URL}/front/contact/submit`,
-        data
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_SERVER_URL}/front/contact/submit`,
+        formData
       );
-      if (response.success) {
-        toast.success(response.message || "Message sent successfully!");
+      if (data?.success) {
+        toast.success(data?.message || "Message sent successfully!");
         reset(); // Clear form fields after successful submission
       } else {
-        toast.error(response.message || "Failed to send message.");
+        toast.error(data?.message || "Failed to send message.");
       }
     } catch (error) {
       toast.error("Unexpected error occurred!");

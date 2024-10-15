@@ -37,6 +37,7 @@ import CostNyc from "./pages/costNyc";
 import Landscape from "./pages/landscape";
 import Rebar from "./pages/rebar";
 import Roofing from "./pages/roofing";
+import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 
 function App() {
