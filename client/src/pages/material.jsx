@@ -44,9 +44,9 @@ function Material() {
         hours. With 10 years of experience in the US construction industry, we
         provide comprehensive Material Takeoff Services for various projects,
         including remodeling and renovations. Contact us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
         <span className="text-customBlue-light font-semibold">
-          bidnetestimators@gmail.com
+          muhammad@mfbzone.com
         </span></a>{" "}
         or{" "}
         <a href="tel:+1 917 300 1079">

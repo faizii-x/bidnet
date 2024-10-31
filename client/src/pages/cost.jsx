@@ -54,9 +54,9 @@ function Cost() {
         </span>{" "}
         for your project and experience excellence in construction cost
         estimating services. Contact us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
         <span className="text-customBlue-light font-semibold">
-          bidnetestimators@gmail.com
+          muhammad@mfbzone.com
         </span></a>{" "}
         or{" "}
         <a href="tel:+1 917 300 1079">

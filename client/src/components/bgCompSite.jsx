@@ -43,9 +43,9 @@ function BgCompSite() {
           profitability. Our skilled landscape estimators leverage professional
           software for efficient landscaping takeoffs, ensuring accurate bids
           and project success. Contact us at{" "}
-          <a href="mailto:bidnetestimators@gmail.com">
+          <a href="mailto:muhammad@mfbzone.com">
             <span className="text-customBlue-light font-medium hover:underline">
-              bidnetestimators@gmail.com
+              muhammad@mfbzone.com
             </span>
           </a>{" "}
           or{" "}

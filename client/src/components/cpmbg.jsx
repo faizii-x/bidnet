@@ -28,9 +28,9 @@ function Cpmbg() {
         time. Our expertise helps manage risks and keeps projects on track. Rely
         on us to handle complex tasks and meet your goals efficiently. Contact
         us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
         <span className="text-customBlue-light font-semibold">
-          bidnetestimators@gmail.com
+          muhammad@mfbzone.com
         </span></a>{" "}
         or{" "}
         <a href="tel:+1 917 300 1079">

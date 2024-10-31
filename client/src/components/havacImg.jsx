@@ -55,9 +55,9 @@ function HavacImg() {
         <p className="text-[18px] mt-1 font-san font-normal text-customBlue-para ">
           24/7 Support: We offer round-the-clock support via chat and email to
           help with any questions or concerns. Contact us at {""}
-          <a href="mailto:bidnetestimators@gmail.com">
+          <a href="mailto:muhammad@mfbzone.com">
             <span className="text-customBlue-light font-semibold">
-              bidnetestimators@gmail.com
+              muhammad@mfbzone.com
             </span>
           </a>{" "}
           or{" "}

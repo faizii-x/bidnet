@@ -183,7 +183,7 @@ function ContactUs() {
           <div className="flex justify-start gap-2">
             <img src={Loca} alt="" className="w-[20px] h-[24px]" />
             <p className="text-[#414141] text-[16px] font-san font-normal">
-              Location
+              247 Metropolitan Ave, Brooklyn, NY 11211, USA
             </p>
           </div>
 
@@ -198,7 +198,7 @@ function ContactUs() {
 
           <div className="flex justify-start gap-2 mt-3">
             <img src={Messe} alt="" className="w-[24px] h-[20px]" />
-            <a href="mailto:bidnetestimators@gmail.com">
+            <a href="mailto:muhammad@mfbzone.com">
               <p className="text-[#414141] sm:text-[16px] text-[14px] font-san font-normal">
                 BiddingHelp@Bidnetestimating.com
               </p>

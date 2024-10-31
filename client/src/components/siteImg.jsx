@@ -28,9 +28,9 @@ function SiteImg() {
         efficiently.
         <br /> Let Bidnet Estimating handle your sitework estimating needs, so
         you can focus on what you do best. Contact us today at {""}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

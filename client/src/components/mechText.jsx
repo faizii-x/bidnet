@@ -191,7 +191,7 @@ function MechText() {
             and increase efficiency and profit potential. We provide
             comprehensive estimating solutions that resolve all your problems.
             Contact us at +1 917 300 1079 or email us at
-            bidnetestimators@gmail.com to become the top contractor in town.
+            muhammad@mfbzone.com to become the top contractor in town.
           </p>
         </div>
         <div className="lg:col-span-1 md:col-span-2 col-span-1 mx-auto self-center mt-6">

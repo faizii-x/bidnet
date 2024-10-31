@@ -22,9 +22,9 @@ function CommerImg() {
         benefits from the oversight of experienced project managers renowned for
         their expertise in commercial estimation. For precise and dependable
         commercial construction estimates, contact us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

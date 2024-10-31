@@ -23,9 +23,9 @@ function RoofComp() {
           value for your investment. Our knowledgeable team is ready to assist
           with any queries and guide you through the process, making your
           roofing projects hassle-free. Contact us at {""}
-          <a href="mailto:bidnetestimators@gmail.com">
+          <a href="mailto:muhammad@mfbzone.com">
             <span className="text-customBlue-light font-medium hover:underline">
-              bidnetestimators@gmail.com
+              muhammad@mfbzone.com
             </span>
           </a>{" "}
           or{" "}

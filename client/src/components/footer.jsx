@@ -120,31 +120,31 @@ function Footer() {
             </p>
 
             <div className="grid justify-start gap-1 mt-3">
-              <a
+              <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/cost-estimating-services/"
+                to="/cost-estimating-services/"
               >
                 Construction Cost Estimating
-              </a>
-              <a
+              </Link>
+              <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/construction-takeoff-services/"
+                to="/construction-takeoff-services/"
               >
                 Construction Takeoff
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/cpm-scheduling/"
+                to="/cpm-scheduling/"
               >
                 CPM Scheduling
-              </a>
-              <a
+              </Link>
+              <Link
                 className="text-white text-[14px] font-san font-light hover:underline"
-                href="/planning/"
+                to="/planning/"
               >
                 Planning
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-span-1">
@@ -154,7 +154,7 @@ function Footer() {
             <div className="flex justify-start gap-2 mt-3">
               <img src={Locate} alt="" className="w-[18px] h-[22px]" />
               <p className="text-white font-san text-[14px] font-light">
-                111 Fulton St, New York, NY 10038, USA
+              247 Metropolitan Ave, Brooklyn, NY 11211, USA
               </p>
             </div>
             <div className="flex justify-start gap-2 mt-3">
@@ -167,9 +167,9 @@ function Footer() {
             </div>
             <div className="flex justify-start gap-2 mt-3">
               <img src={Messeg} alt="" className="w-[22px] h-[16px] mt-1" />
-              <a href="mailto:bidnetestimators@gmail.com">
+              <a href="mailto:muhammad@mfbzone.com">
               <p className="text-white font-san text-[14px] font-light underline">
-                bidnetestimators@gmail.com
+                muhammad@mfbzone.com
               </p>
               </a>
             </div>

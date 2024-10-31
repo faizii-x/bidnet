@@ -93,7 +93,7 @@ function MiniSlider() {
                 className="w-[80px] h-[80px] mx-auto mt-5"
               />
               <p className="text-customBlue-light text-[18px] text-center mt-1 font-san font-semibold">
-                John Elia
+                Charlie
               </p>
             </div>
             {/* ............................................. */}

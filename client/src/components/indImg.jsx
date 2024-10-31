@@ -22,9 +22,9 @@ function IndImg() {
         by expertise and the latest technology, we ensure precise estimates,
         enabling effective cost prediction, coordination, and management
         throughout the project lifecycle. Reach out to us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

@@ -20,9 +20,9 @@ function ThermalImg() {
         assist in planning and allocating resources for these essential
         elements, ensuring the longevity and durability of your project against
         environmental factors. Contact us via {""}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

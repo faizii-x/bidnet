@@ -96,9 +96,9 @@ function ResiComp() {
 
           <p className="text-[16px] font-san mt-1 font-normal text-customBlue-para ">
             Contact us at{" "}
-            <a href="mailto:bidnetestimators@gmail.com">
+            <a href="mailto:muhammad@mfbzone.com">
               <span className="text-customBlue-light font-medium hover:underline">
-                bidnetestimators@gmail.com
+                muhammad@mfbzone.com
               </span>
             </a>{" "}
             or{" "}

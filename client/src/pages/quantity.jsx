@@ -40,9 +40,9 @@ function Quantity() {
         At Bidnet Estimating
         </span>{" "}
         , we offer top-quality takeoff services for construction companies. Our skilled team uses the latest tools to provide fast and accurate labor and material estimates. Even on short notice, we can deliver takeoff services within 24 hours. With 10 years of experience in the US construction industry, we’ve successfully handled various projects, including remodeling and renovations. Contact at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
         <span className="text-customBlue-light font-semibold">
-          bidnetestimators@gmail.com
+          muhammad@mfbzone.com
         </span></a>{" "}
         or{" "}
         <a href="tel:+1 917 300 1079">

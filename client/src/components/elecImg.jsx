@@ -31,9 +31,9 @@ function ElecImg() {
           </span>
         </a>{" "}
         or email us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>
       </p>

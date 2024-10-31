@@ -25,9 +25,9 @@ function Planbg() {
         It's important to note that planning differs from scheduling. Planning
         sets the direction, while scheduling ensures tasks happen on time. For
         inquiries, reach out to us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-semibold">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

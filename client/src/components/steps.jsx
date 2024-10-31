@@ -30,7 +30,7 @@ function Steps() {
               Project
             </h3>
             <p className="text-[16px] font-san text-[#000000]">
-            Submit your plans here or email them to <span className="text-customBlue-light font-semibold underline">bidnetestimators@gmail.com</span> at your convenience. Make sure to include your scope of work and any specific project details.
+            Submit your plans here or email them to <span className="text-customBlue-light font-semibold underline">muhammad@mfbzone.com</span> at your convenience. Make sure to include your scope of work and any specific project details.
             </p>
           </li>
           <li className="mb-10 ms-6">

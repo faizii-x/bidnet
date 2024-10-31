@@ -69,9 +69,9 @@ function MetalImg() {
           <p className="text-[16px] font-san font-semibold mt-2">Contact Us:</p>
           <p className="text-[18px] mt-1 font-san font-normal text-customBlue-para ">
             Reach out to Bidnet Estimating at{" "}
-            <a href="mailto:bidnetestimators@gmail.com">
+            <a href="mailto:muhammad@mfbzone.com">
               <span className="text-customBlue-light font-semibold">
-                bidnetestimators@gmail.com
+                muhammad@mfbzone.com
               </span>
             </a>{" "}
             or{" "}

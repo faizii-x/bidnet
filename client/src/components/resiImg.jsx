@@ -20,9 +20,9 @@ function ResiImg() {
         regional pricing for labor and materials. Our streamlined process
         adheres to industry best practices, making it easy to review and submit
         to vendors. Contact us at {" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

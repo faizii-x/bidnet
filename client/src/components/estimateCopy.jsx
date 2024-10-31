@@ -111,10 +111,10 @@ function EstimateCopy() {
                   
                   <a
                     className="underline hover:text-red"
-                    href="mailto:bidnetestimators@gmail.com"
+                    href="mailto:muhammad@mfbzone.com"
                   >
                     {" "}
-                    bidnetestimators@gmail.com
+                    muhammad@mfbzone.com
                   </a>
                 </p>
 

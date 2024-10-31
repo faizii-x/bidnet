@@ -20,9 +20,9 @@ function RebarImg() {
         receives meticulous analysis and comprehensive estimation. Whether your
         project is large or small, complex or straightforward, we deliver
         efficient and reliable results. Contact us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

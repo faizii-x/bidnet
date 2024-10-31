@@ -27,9 +27,9 @@ function ConcreteImg() {
         for dependable concrete estimating services that streamline your project
         planning and budgeting. Contact us at {""}
         {""}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

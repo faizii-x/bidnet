@@ -18,9 +18,9 @@ function ServiceTwo() {
             exclusively for clients within the United States. Our dedicated
             expertise serves both individuals and businesses across the nation.
             Contact us at{" "}
-            <a href="mailto:bidnetestimators@gmail.com">
+            <a href="mailto:muhammad@mfbzone.com">
             <span className="text-customBlue-light font-medium hover:underline">
-              bidnetestimators@gmail.com
+              muhammad@mfbzone.com
             </span></a>{" "}
             or{" "}
             <a href="tel:+1 917 300 1079">

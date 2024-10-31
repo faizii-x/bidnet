@@ -25,9 +25,9 @@ function Herotakeoff() {
           Bidnet Estimating
         </span>{" "}
         , we prioritize offering dependable Construction Takeoff Services, covering Quantity Takeoff and Material Takeoff. Our goal is to ensure your project's success from the outset. With more than a decade of experience, we grasp the evolving market dynamics, enabling us to manage projects of any level of complexity. Reach out to us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
         <span className="text-customBlue-light font-semibold">
-          bidnetestimators@gmail.com
+          muhammad@mfbzone.com
         </span></a>{" "}
         or{" "}
         <a href="tel:+1 917 300 1079">

@@ -125,7 +125,7 @@ function SliderStyle() {
                 Flexible Trades
               </p>
               <p className="text-white mt-1 text-[16px] font-san font-light">
-                At UK Estimators, we recognize that every project is unique. We
+                At Bidnet Estimating, we recognize that every project is unique. We
                 provide customized estimating services that cater to your
                 specific requirements, ensuring that each estimate reflects your
                 project’s unique scope and challenges.

@@ -27,9 +27,9 @@ function InteriorImg() {
         for exterior and interior coatings, metallics, patinas, and chrome,
         which are often expensive features, require careful attention. Contact
         us at{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

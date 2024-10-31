@@ -24,9 +24,9 @@ function Metbg() {
           aspect of your project receives meticulous analysis and comprehensive
           estimation. Whether your project is large or small, complex or
           straightforward, we deliver efficient and reliable results. Contact us
-          at  <a href="mailto:bidnetestimators@gmail.com">
+          at  <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a> or  <a href="tel:+1 917 300 1079">
           <span className="text-customBlue-light font-medium hover:underline">

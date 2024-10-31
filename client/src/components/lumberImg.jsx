@@ -17,9 +17,9 @@ function LumberImg() {
         tailored for construction projects. With our detailed takeoffs and
         expert guidance, we ensure that your projects benefit from precise
         material estimates, reducing waste and optimizing costs. Contact us via{" "}
-        <a href="mailto:bidnetestimators@gmail.com">
+        <a href="mailto:muhammad@mfbzone.com">
           <span className="text-customBlue-light font-medium hover:underline">
-            bidnetestimators@gmail.com
+            muhammad@mfbzone.com
           </span>
         </a>{" "}
         or{" "}

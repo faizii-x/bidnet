@@ -13,9 +13,9 @@ function FirstTrade() {
             for clients in the United States. Our dedicated team provides expert
             solutions for both individuals and businesses nationwide. Reach us
             at{" "}
-            <a href="mailto:bidnetestimators@gmail.com">
+            <a href="mailto:muhammad@mfbzone.com">
             <span className="text-customBlue-light font-medium hover:underline">
-              bidnetestimators@gmail.com
+              muhammad@mfbzone.com
             </span></a>{" "}
             or{" "}
             <a href="tel:+1 917 300 1079">
