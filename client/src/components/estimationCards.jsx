@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function EstimationCards() {
   useEffect(() => {
@@ -56,9 +57,9 @@ function EstimationCards() {
           <p className="text-[18px] font-semibold text-[#414141] font-san mt-[5px]">
             150$ <span className="text-[16px] font-normal">Specific Trade</span>
           </p>
-          <div className="cursor-pointer bg-customBlue-light hover:bg-white hover:border-black border hover:text-black p-3 mt-4 rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
-            <button>Get Started</button>
-          </div>
+          <Link to='/contact-us' className="cursor-pointer bg-customBlue-light hover:bg-white hover:border-black border hover:text-black p-3 mt-4 rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
+            Get Started
+          </Link>
         </div>
         {/* ........................ */}
         <div
@@ -116,9 +117,9 @@ function EstimationCards() {
           <p className="text-[18px] font-semibold text-white font-san mt-[5px]">
             1500$ <span className="text-[16px] font-normal">Per Month</span>
           </p>
-          <div className="cursor-pointer bg-white hover:text-black hover:bg-white hover:border-black border p-3 mt-4 rounded-lg text-customBlue-light text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
-            <button>Get Started</button>
-          </div>
+          <Link to='/contact-us' className="cursor-pointer bg-white hover:text-black hover:bg-white hover:border-black border p-3 mt-4 rounded-lg text-customBlue-light text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
+            Get Started
+          </Link>
         </div>
         {/* ............................. */}
         <div
@@ -160,9 +161,9 @@ function EstimationCards() {
           <p className="text-[18px] font-semibold text-[#414141] font-san mt-[5px]">
             CALL FOR PRICE
           </p>
-          <div className="cursor-pointer bg-customBlue-light hover:bg-white hover:border-black border hover:text-black p-3 mt-[67px] rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
-            <button>Call Now</button>
-          </div>
+          <Link to='/contact-us' className="cursor-pointer bg-customBlue-light hover:bg-white hover:border-black border hover:text-black p-3 mt-[67px] rounded-lg text-white text-[18px] font-semibold flex justify-center items-center w-[90%] mx-auto">
+            <p>Get Started</p>
+          </Link>
         </div>
         {/* .......................... */}
       </div>

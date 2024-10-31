@@ -57,9 +57,9 @@ function EstimateCopy() {
                   approval.
                 </p>
 
-                <button className=" mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
+                {/* <button className=" mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
-                </button>
+                </button> */}
               </div>
             </div>
             <div className=" bg-customBlue-light rounded-lg md:h-[240px] h-auto p-6 mt-6">
@@ -75,9 +75,9 @@ function EstimateCopy() {
                   approval we can complete the job with appropriate assumptions.
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
+                {/* <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
-                </button>
+                </button> */}
               </div>
             </div>
             <div className=" bg-customBlue-light rounded-lg md:h-[240px] h-auto p-6 mt-6">
@@ -92,9 +92,9 @@ function EstimateCopy() {
                 Our expert estimators provide detailed estimates covering materials and labor. We deliver estimates in EXCEL format, using our template or the client's preference.
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
+                {/* <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
-                </button>
+                </button> */}
               </div>
             </div>
             <div className=" bg-customBlue-light rounded-lg md:h-[240px] h-auto p-6 mt-6">
@@ -118,9 +118,9 @@ function EstimateCopy() {
                   </a>
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
+                {/* <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
-                </button>
+                </button> */}
               </div>
             </div>
             <div className=" bg-customBlue-light rounded-lg md:h-[240px] h-auto p-6 mt-6">
@@ -136,9 +136,9 @@ function EstimateCopy() {
                   the drawings provided by you.
                 </p>
 
-                <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
+                {/* <button className="mx-auto rounded-md text-[15px] bg-white hover:bg-customBlue-dark hover:text-white  lg:w-[16%] w-[45%] h-auto p-3">
                   Upload plans
-                </button>
+                </button> */}
               </div>
             </div>
           </Slider>
@@ -171,11 +171,6 @@ function EstimateCopy() {
             </div>
           </div>
         </div>
-
-
-        
-
-
       </div>
     </>
   );

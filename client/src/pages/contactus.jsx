@@ -200,7 +200,7 @@ function ContactUs() {
             <img src={Messe} alt="" className="w-[24px] h-[20px]" />
             <a href="mailto:muhammad@mfbzone.com">
               <p className="text-[#414141] sm:text-[16px] text-[14px] font-san font-normal">
-                BiddingHelp@Bidnetestimating.com
+              muhammad@mfbzone.com
               </p>
             </a>
           </div>

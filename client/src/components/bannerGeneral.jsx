@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 function BannerGeneral() {
@@ -55,9 +56,9 @@ function BannerGeneral() {
             <p className="text-white text-[38px] text-center font-san font-bold">
               Big Sale Event
             </p>
-            <div className="mb-5 cursor-pointer bg-customBlue-light text-white w-[130px] p-2 mx-auto mt-3 font-semibold flex justify-center items-center">
-              <button>Get Started</button>
-            </div>
+            <Link to='/contact-us' className="mb-5 cursor-pointer bg-customBlue-light text-white w-[130px] p-2 mx-auto mt-3 font-semibold flex justify-center items-center">
+              <span>Get Started</span>
+            </Link>
           </div>
           <div className="col-span-2 mx-auto self-center">
             {/* <div className="slider-container"> */}

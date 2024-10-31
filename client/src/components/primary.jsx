@@ -27,7 +27,7 @@ function Primary() {
             Explore the basics of Quantity Takeoff services, vital for project
             estimation. Understand its importance and methods in an easy format.
           </p>
-          <Link to="/quantity">
+          <Link to="/quantity-takeoff-services">
           <div className="border border-customBlue-light p-2 mt-2 text-customBlue-light cursor-pointer hover:bg-customBlue-light hover:text-white w-[140px] rounded-full flex justify-center items-center mx-auto">
             <button>Read More</button>
           </div>
@@ -42,7 +42,7 @@ function Primary() {
             Explore the basics of Quantity Takeoff services, vital for project
             estimation. Understand its importance and methods in an easy format.
           </p>
-          <Link to="/material">
+          <Link to="/material-takeoff-services">
           <div className="border border-customBlue-light p-2 mt-2 text-customBlue-light cursor-pointer hover:bg-customBlue-light hover:text-white w-[140px] rounded-full flex justify-center items-center mx-auto">
             <button>Read More</button>
           </div>

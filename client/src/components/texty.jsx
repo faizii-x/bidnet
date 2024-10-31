@@ -2,6 +2,7 @@ import Line from "../../public/png/line.png";
 import Sky from "../../public/png/sky.png";
 import Costy from "../../public/png/costy.png";
 import Costy2 from "../../public/png/costy2.png";
+import { Link } from "react-router-dom";
 
 function Texty() {
   return (
@@ -35,9 +36,9 @@ function Texty() {
             project’s success. Contact us for precise estimates that keep you on
             budget and schedule.
           </p>
-          <div className="bg-white border border-customBlue-light p-2 w-[130px] text-customBlue-light flex justify-center items-center mt-3 cursor-pointer hover:bg-customBlue-light hover:text-white rounded-md">
-            <button>Read More</button>
-          </div>
+          <Link to='/contact-us' className="bg-white border border-customBlue-light p-2 w-[130px] text-customBlue-light flex justify-center items-center mt-3 cursor-pointer hover:bg-customBlue-light hover:text-white rounded-md">
+            Get Now
+          </Link>
         </div>
       </div>
       {/* .................................... */}
